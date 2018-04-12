@@ -24,4 +24,8 @@ public class LoginHelper extends HelperBase {
     public Boolean isUserLoggedIn() {
         return wait.until(visibilityOfElementLocated(By.xpath("//span[@class = 'employee_avatar_small']"))).isDisplayed();
     }
+
+    public Boolean isLoginButtonPresent() {
+        return isElementPresent(By.xpath("//button[@id = 'submit_login']"));
+    }
 }

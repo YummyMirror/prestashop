@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import static org.openqa.selenium.support.ui.ExpectedConditions.*;
 
-public class HelperBase {
+public abstract class HelperBase {
     protected WebDriver wd;
     protected WebDriverWait wait;
 
