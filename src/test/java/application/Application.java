@@ -1,5 +1,6 @@
 package application;
 
+import base.ApplicationBase;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -9,7 +10,7 @@ import org.openqa.selenium.ie.InternetExplorerOptions;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class Application {
+public class Application extends ApplicationBase {
     private WebDriver wd;
     private WebDriverWait wait;
     private enum Browser {
@@ -22,6 +23,8 @@ public class Application {
         wd = createDriver(Browser.CHROME);
         wait = new WebDriverWait(wd, 10);
         wd.manage().window().maximize();
+
+        initDelegate(wd);
     }
 
     public void stop() {
