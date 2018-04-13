@@ -1,7 +1,7 @@
-package helper;
+package helper.admin_side;
 
 import base.HelperBase;
-import model.LoginData;
+import model.admin_side.UserData;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import static org.openqa.selenium.support.ui.ExpectedConditions.*;
@@ -12,7 +12,7 @@ public class LoginHelper extends HelperBase {
         super(wd);
     }
 
-    public void fillLoginForm(LoginData loginData) {
+    public void fillLoginForm(UserData loginData) {
         input(By.xpath("//input[@id = 'email']"), loginData.getLogin());
         input(By.xpath("//input[@id = 'passwd']"), loginData.getPassword());
     }
@@ -27,5 +27,10 @@ public class LoginHelper extends HelperBase {
 
     public Boolean isLoginButtonPresent() {
         return isElementPresent(By.xpath("//button[@id = 'submit_login']"));
+    }
+
+    public void loginAs(UserData loginData) {
+        fillLoginForm(loginData);
+        clickLoginButton();
     }
 }

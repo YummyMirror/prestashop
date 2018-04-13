@@ -1,6 +1,6 @@
-package model;
+package model.admin_side;
 
-public class LoginData {
+public class UserData {
     private String login;
     private String password;
 
@@ -14,19 +14,19 @@ public class LoginData {
     }
 
     //Setters
-    public LoginData setLogin(String login) {
+    public UserData setLogin(String login) {
         this.login = login;
         return this;
     }
 
-    public LoginData setPassword(String password) {
+    public UserData setPassword(String password) {
         this.password = password;
         return this;
     }
 
     @Override
     public String toString() {
-        return "LoginData{" +
+        return "UserData{" +
                 "login='" + login + '\'' +
                 ", password='" + password + '\'' +
                 '}';

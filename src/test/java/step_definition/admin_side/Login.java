@@ -1,8 +1,9 @@
-package step_definition;
+package step_definition.admin_side;
 
 import base.CucumberBase;
 import cucumber.api.java8.En;
-import model.LoginData;
+import model.admin_side.UserData;
+
 import static org.testng.Assert.*;
 
 public class Login implements En {
@@ -16,7 +17,7 @@ public class Login implements En {
             base.app.navigate().openUrl("http://localhost/prestashop/admin7415x81bm/index.php");
         });
         When("^I enter both valid \'(.+)\' and \'(.+)\'$", (String login, String password) -> {
-            base.app.login().fillLoginForm(new LoginData().setLogin(login).setPassword(password));
+            base.app.login().fillLoginForm(new UserData().setLogin(login).setPassword(password));
         });
         And("^I click the login page$", () -> {
             base.app.login().clickLoginButton();
@@ -27,7 +28,7 @@ public class Login implements En {
 
         //Invalid login
         When("^I enter invalid \'(.*)\' and \'(.*)\'$", (String login, String password) -> {
-            base.app.login().fillLoginForm(new LoginData().setLogin(login).setPassword(password));
+            base.app.login().fillLoginForm(new UserData().setLogin(login).setPassword(password));
         });
         Then("^I verify that user is not logged in$", () -> {
             assertTrue(base.app.login().isLoginButtonPresent());
