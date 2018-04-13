@@ -3,7 +3,6 @@ package step_definition.admin_side;
 import base.CucumberBase;
 import cucumber.api.java8.En;
 import model.admin_side.UserData;
-
 import static org.testng.Assert.*;
 
 public class Login implements En {
@@ -23,7 +22,7 @@ public class Login implements En {
             base.app.login().clickLoginButton();
         });
         Then("^I verify that user is logged in$", () -> {
-            assertTrue(base.app.login().isUserLoggedIn());
+            assertTrue(base.app.login().isUserLoggedIn(), "User is not logged in!");
         });
 
         //Invalid login
@@ -31,7 +30,7 @@ public class Login implements En {
             base.app.login().fillLoginForm(new UserData().setLogin(login).setPassword(password));
         });
         Then("^I verify that user is not logged in$", () -> {
-            assertTrue(base.app.login().isLoginButtonPresent());
+            assertTrue(base.app.login().isLoginButtonPresent(), "User is logged in!");
         });
     }
 }

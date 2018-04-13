@@ -1,9 +1,6 @@
 package base;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.io.File;
@@ -42,6 +39,10 @@ public abstract class HelperBase {
 
     public void click(By locator) {
         wait.until(elementToBeClickable(locator)).click();
+    }
+
+    public void click(WebElement element) {
+        wait.until(elementToBeClickable(element)).click();
     }
 
     public Boolean isElementPresent(By locator) {
@@ -89,5 +90,9 @@ public abstract class HelperBase {
     public void upload(By locator, File file) {
         if (file != null)
             wd.findElement(locator).sendKeys(file.getAbsolutePath());
+    }
+
+    public Alert alert() {
+        return wait.until(alertIsPresent());
     }
 }

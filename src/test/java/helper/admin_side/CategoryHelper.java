@@ -5,6 +5,7 @@ import model.admin_side.CategoryData;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import java.io.File;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -44,5 +45,45 @@ public class CategoryHelper extends HelperBase {
     public void clickSaveButtonToCreate() {
         click(By.xpath("//button[@id = 'category_form_submit_btn']"));
         wait.until(visibilityOfElementLocated(By.xpath("//div[@class = 'alert alert-success']")));
+    }
+
+    public CategoryData transform(List<String> list) {
+        String name = list.get(0);
+        Boolean isDisplayed = Boolean.valueOf(list.get(1));
+        String description = list.get(2);
+        String coverImage = list.get(3);
+        return new CategoryData().setName(name)
+                                 .setDisplayed(isDisplayed)
+                                 .setDescription(description)
+                                 .setCoverImage(new File(coverImage));
+    }
+
+    private void selectCategory(int id) {
+        wd.findElement(By.xpath("//input[@value = '" + id + "']")).click();
+    }
+
+    private void clickBulkActionsButton() {
+        click(By.xpath("//button[contains(@id, 'bulk_action')]"));
+        wait.until(attributeContains(By.xpath("//button[contains(@id, 'bulk_action')]/.."),
+                            "class", "open"));
+    }
+
+    private void clickButtonFromBulkActions(String buttonName) {
+        List<WebElement> buttons = wd.findElements(By.xpath("//div[contains(@class, 'bulk-actions')]/ul//a"));
+        for (WebElement button : buttons) {
+            if (buttonName.equalsIgnoreCase(button.getText().trim())) {
+                button.click();
+                break;
+            }
+        }
+    }
+
+    public void deleteCategory(CategoryData category) {
+        selectCategory(category.getId());
+        clickBulkActionsButton();
+        clickButtonFromBulkActions("Delete selected");
+        alert().accept();
+        click(By.xpath("//div[@class = 'panel-footer']//button[not(@name = 'cancel')]"));
+        wait.until(visibilityOfElementLocated(By.xpath("//div[contains(@class, 'alert-success')]")));
     }
 }
