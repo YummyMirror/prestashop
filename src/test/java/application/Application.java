@@ -1,7 +1,11 @@
 package application;
 
 import base.ApplicationBase;
+import com.google.common.io.Files;
+import cucumber.api.Scenario;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -29,6 +33,10 @@ public class Application extends ApplicationBase {
     }
 
     //Getters
+    public WebDriver wd() {
+        return wd;
+    }
+
     public Properties properties() {
         return properties;
     }
@@ -72,5 +80,12 @@ public class Application extends ApplicationBase {
     private void loadProperties() throws IOException {
         properties = new Properties();
         properties.load(new FileReader(new File("src/test/resources/property/admin.properties")));
+    }
+
+    public void takeScreenshot(Scenario scenario) throws IOException {
+        if (scenario.isFailed()) {
+            File screenshot = ((TakesScreenshot) wd).getScreenshotAs(OutputType.FILE);
+            Files.copy(screenshot, new File("src/test/resources/screenshot/" + scenario.getName() + "_" + System.currentTimeMillis() + ".jpg"));
+        }
     }
 }
