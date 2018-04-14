@@ -14,7 +14,6 @@ public class Category implements En {
     private CucumberBase base;
     private Set<CategoryData> before;
     private CategoryData category;
-    private CategoryData deletedCategory;
 
     public Category(CucumberBase base) {
         this.base = base;
@@ -54,14 +53,14 @@ public class Category implements En {
                 base.app.category().fillCategoryForm(category);
                 base.app.category().clickSaveButtonToCreate();
             }
-            deletedCategory = before.stream().findAny().get();
-            base.app.category().deleteCategory(deletedCategory);
+            category = before.stream().findAny().get();
+            base.app.category().deleteCategory(category);
         });
         Then("^Number of categories is decremented$", () -> {
             Set<CategoryData> after = base.app.category().getCategories();
             assertEquals(after.size() + 1, before.size(), "Sizes are not equals!");
 
-            before.remove(deletedCategory);
+            before.remove(category);
             assertEquals(after, before, "Collections are not equals!");
         });
     }
