@@ -13,10 +13,11 @@ public class Login implements En {
 
         //Valid login
         Given("^I open the administration login page$", () -> {
-            base.app.navigate().openUrl("http://localhost/prestashop/admin7415x81bm/index.php");
+            base.app.navigate().openUrl(base.app.properties().getProperty("baseUrl"));
         });
-        When("^I enter both valid \'(.+)\' and \'(.+)\'$", (String login, String password) -> {
-            base.app.login().fillLoginForm(new UserData().setLogin(login).setPassword(password));
+        When("^I enter both valid \'username\' and \'password\'$", () -> {
+            base.app.login().fillLoginForm(new UserData().setLogin(base.app.properties().getProperty("login"))
+                                                         .setPassword(base.app.properties().getProperty("password")));
         });
         And("^I click the login page$", () -> {
             base.app.login().clickLoginButton();

@@ -6,9 +6,9 @@ import helper.admin_side.NavigationHelper;
 import org.openqa.selenium.WebDriver;
 
 public abstract class ApplicationBase {
-    protected LoginHelper loginHelper;
-    protected NavigationHelper navigationHelper;
-    protected CategoryHelper categoryHelper;
+    private LoginHelper loginHelper;
+    private NavigationHelper navigationHelper;
+    private CategoryHelper categoryHelper;
 
     protected void initDelegate(WebDriver wd) {
         loginHelper = new LoginHelper(wd);

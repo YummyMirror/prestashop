@@ -17,6 +17,28 @@ public class CategoryHelper extends HelperBase {
         super(wd);
     }
 
+    //Additional methods
+    private void selectCategory(int id) {
+        wd.findElement(By.xpath("//input[@value = '" + id + "']")).click();
+    }
+
+    private void clickBulkActionsButton() {
+        click(By.xpath("//button[contains(@id, 'bulk_action')]"));
+        wait.until(attributeContains(By.xpath("//button[contains(@id, 'bulk_action')]/.."),
+                            "class", "open"));
+    }
+
+    private void clickButtonFromBulkActions(String buttonName) {
+        List<WebElement> buttons = wd.findElements(By.xpath("//div[contains(@class, 'bulk-actions')]/ul//a"));
+        for (WebElement button : buttons) {
+            if (buttonName.equalsIgnoreCase(button.getText().trim())) {
+                button.click();
+                break;
+            }
+        }
+    }
+
+    //Main methods
     public Set<CategoryData> getCategories() {
         Set<CategoryData> categories = new HashSet<>();
         List<WebElement> rows = wd.findElements(By.xpath("//tr[contains(@id, 'tr')]"));
@@ -56,26 +78,6 @@ public class CategoryHelper extends HelperBase {
                                  .setDisplayed(isDisplayed)
                                  .setDescription(description)
                                  .setCoverImage(new File(coverImage));
-    }
-
-    private void selectCategory(int id) {
-        wd.findElement(By.xpath("//input[@value = '" + id + "']")).click();
-    }
-
-    private void clickBulkActionsButton() {
-        click(By.xpath("//button[contains(@id, 'bulk_action')]"));
-        wait.until(attributeContains(By.xpath("//button[contains(@id, 'bulk_action')]/.."),
-                            "class", "open"));
-    }
-
-    private void clickButtonFromBulkActions(String buttonName) {
-        List<WebElement> buttons = wd.findElements(By.xpath("//div[contains(@class, 'bulk-actions')]/ul//a"));
-        for (WebElement button : buttons) {
-            if (buttonName.equalsIgnoreCase(button.getText().trim())) {
-                button.click();
-                break;
-            }
-        }
     }
 
     public void deleteCategory(CategoryData category) {

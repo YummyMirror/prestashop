@@ -21,8 +21,9 @@ public class Category implements En {
 
         //Create category
         Given("^Number of categories before creation$", () -> {
-            base.app.navigate().openUrl("http://localhost/prestashop/admin7415x81bm/index.php");
-            base.app.login().loginAs(new UserData().setLogin("123@mail.ru").setPassword("password"));
+            base.app.navigate().openUrl(base.app.properties().getProperty("baseUrl"));
+            base.app.login().loginAs(new UserData().setLogin(base.app.properties().getProperty("login"))
+                                                   .setPassword(base.app.properties().getProperty("password")));
             base.app.navigate().openMenuItem("Catalog", "Categories");
             before = base.app.category().getCategories();
         });

@@ -26,7 +26,7 @@ public abstract class HelperBase {
         wait.until(urlContains(url));
     }
 
-    public void input(By locator, String value) {
+    protected void input(By locator, String value) {
         if (value != null && ! value.isEmpty()) {
             String currentValue = wd.findElement(locator).getAttribute("value");
             if (! value.equals(currentValue)) {
@@ -37,19 +37,19 @@ public abstract class HelperBase {
         }
     }
 
-    public void click(By locator) {
+    protected void click(By locator) {
         wait.until(elementToBeClickable(locator)).click();
     }
 
-    public void click(WebElement element) {
+    protected void click(WebElement element) {
         wait.until(elementToBeClickable(element)).click();
     }
 
-    public Boolean isElementPresent(By locator) {
+    protected Boolean isElementPresent(By locator) {
         return wd.findElements(locator).size() > 0;
     }
 
-    public void check(By locator, Boolean value) {
+    protected void check(By locator, Boolean value) {
         if (value != null) {
             if (value) {
                 if (! wd.findElement(locator).isSelected())
@@ -61,7 +61,7 @@ public abstract class HelperBase {
         }
     }
 
-    public void radio(By locator, Boolean value) {
+    protected void radio(By locator, Boolean value) {
         if (value != null) {
             List<WebElement> radios = wd.findElements(locator);
             if (value) {
@@ -72,27 +72,31 @@ public abstract class HelperBase {
         }
     }
 
-    private void toFrame(By locator) {
+    protected void toFrame(By locator) {
         wait.until(frameToBeAvailableAndSwitchToIt(locator));
     }
 
-    public void textAreaInFrame(By frameLocator, String value) {
+    protected void fromFrame() {
+        wd.switchTo().defaultContent();
+    }
+
+    protected void textAreaInFrame(By frameLocator, String value) {
         if (value != null && ! value.isEmpty()) {
             toFrame(frameLocator);
             String currentValue = wd.findElement(By.xpath("//body")).getText();
             if (! value.equals(currentValue))
                 wd.findElement(By.xpath("//body")).clear();
                 wd.findElement(By.xpath("//body")).sendKeys(value);
-                wd.switchTo().defaultContent();
+                fromFrame();
         }
     }
 
-    public void upload(By locator, File file) {
+    protected void upload(By locator, File file) {
         if (file != null)
             wd.findElement(locator).sendKeys(file.getAbsolutePath());
     }
 
-    public Alert alert() {
+    protected Alert alert() {
         return wait.until(alertIsPresent());
     }
 }

@@ -13,6 +13,12 @@ public class NavigationHelper extends HelperBase {
         super(wd);
     }
 
+    //Additional methods
+    private List<WebElement> getMenuItems() {
+        return wait.until(visibilityOfAllElementsLocatedBy(By.xpath("//ul[@class = 'menu']/li[contains(@class, 'maintab')]")));
+    }
+
+    //Main methods
     public void openMenuItem(String itemName, String subItemName) {
         for (int i = 0; i < getMenuItems().size(); i++) {
             List<WebElement> menuItems = getMenuItems();
@@ -34,9 +40,5 @@ public class NavigationHelper extends HelperBase {
                 }
             }
         }
-    }
-
-    private List<WebElement> getMenuItems() {
-        return wait.until(visibilityOfAllElementsLocatedBy(By.xpath("//ul[@class = 'menu']/li[contains(@class, 'maintab')]")));
     }
 }

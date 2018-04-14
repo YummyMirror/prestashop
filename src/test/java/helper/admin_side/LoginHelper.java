@@ -12,6 +12,7 @@ public class LoginHelper extends HelperBase {
         super(wd);
     }
 
+    //Main methods
     public void fillLoginForm(UserData loginData) {
         input(By.xpath("//input[@id = 'email']"), loginData.getLogin());
         input(By.xpath("//input[@id = 'passwd']"), loginData.getPassword());
