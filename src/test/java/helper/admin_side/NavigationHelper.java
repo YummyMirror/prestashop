@@ -15,7 +15,12 @@ public class NavigationHelper extends HelperBase {
 
     //Additional methods
     private List<WebElement> getMenuItems() {
-        return wait.until(visibilityOfAllElementsLocatedBy(By.xpath("//ul[@class = 'menu']/li[contains(@class, 'maintab')]")));
+        return wait.until(visibilityOfAllElementsLocatedBy(By.xpath("//nav/ul[contains(@class, 'menu')]" +
+                                                                    "/li[contains(@id, 'subtab') or contains(@id, 'Admin')]")));
+    }
+
+    private List<WebElement> getSubItems(WebElement parent) {
+        return parent.findElements(By.xpath(".//li"));
     }
 
     //Main methods
@@ -23,18 +28,14 @@ public class NavigationHelper extends HelperBase {
         for (int i = 0; i < getMenuItems().size(); i++) {
             List<WebElement> menuItems = getMenuItems();
             if (itemName.equalsIgnoreCase(menuItems.get(i).findElement(By.xpath("./a")).getText())) {
-                actions.moveToElement(menuItems.get(i))
-                        .build()
-                        .perform();
-                wait.until(attributeContains(menuItems.get(i), "class", "hover"));
+                menuItems.get(i).click();
+                wait.until(attributeContains(getMenuItems().get(i), "class", "active"));
 
-                List<WebElement> subItems = menuItems.get(i).findElements(By.xpath("./ul[contains(@class, 'submenu')]/li"));
-                for (int j = 0; j < subItems.size(); j++) {
+                for (int j = 0; j < getSubItems(getMenuItems().get(i)).size(); j++) {
+                    List<WebElement> subItems = getSubItems(getMenuItems().get(i));
                     if (subItemName.equalsIgnoreCase(subItems.get(j).findElement(By.xpath("./a")).getText())) {
-                        actions.moveToElement(subItems.get(j))
-                                .click()
-                                .build()
-                                .perform();
+                        subItems.get(j).click();
+                        wait.until(attributeContains(getSubItems(getMenuItems().get(i)).get(j), "class", "active"));
                         break;
                     }
                 }

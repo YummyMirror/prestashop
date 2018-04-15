@@ -2,13 +2,13 @@ package helper.admin_side;
 
 import base.HelperBase;
 import model.admin_side.CategoryData;
+import net.lightbody.bmp.core.har.HarEntry;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import java.io.File;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
+import java.util.stream.Collectors;
 import static org.openqa.selenium.support.ui.ExpectedConditions.*;
 
 public class CategoryHelper extends HelperBase {
@@ -36,6 +36,12 @@ public class CategoryHelper extends HelperBase {
                 break;
             }
         }
+    }
+
+    private File getLatestFile(File dir) {
+        assert dir.exists() && dir.isDirectory();
+        return Arrays.stream(Objects.requireNonNull(dir.listFiles()))
+                     .max(Comparator.comparingDouble(File::lastModified)).get();
     }
 
     //Main methods
@@ -87,5 +93,30 @@ public class CategoryHelper extends HelperBase {
         alert().accept();
         click(By.xpath("//div[@class = 'panel-footer']//button[not(@name = 'cancel')]"));
         wait.until(visibilityOfElementLocated(By.xpath("//div[contains(@class, 'alert-success')]")));
+    }
+
+    public void clickExportButton() {
+        click(By.xpath("//a[@id = 'desc-category-export']"));
+    }
+
+    public List<HarEntry> getDownloadFilesList(List<HarEntry> list) {
+        return list.stream()
+                   .filter(i -> i.getResponse().getStatus() == 200 &&
+                                i.getResponse().getContent().getMimeType().contains("application/force-download"))
+                   .collect(Collectors.toList());
+    }
+
+    public Boolean waitForFileDownload(File dir, int secToWait) throws InterruptedException {
+        for (int i = 0; i < secToWait; i++) {
+            if (! getLatestFile(dir).getName().contains("csv"))
+                Thread.sleep(1000);
+            else
+                break;
+        }
+        return getLatestFile(dir).getName().contains("csv");
+    }
+
+    public String getLastFileName(File dir) {
+        return getLatestFile(dir).getName();
     }
 }

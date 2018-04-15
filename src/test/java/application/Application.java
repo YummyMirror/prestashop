@@ -3,21 +3,23 @@ package application;
 import base.ApplicationBase;
 import com.google.common.io.Files;
 import cucumber.api.Scenario;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
+import net.lightbody.bmp.BrowserMobProxy;
+import net.lightbody.bmp.BrowserMobProxyServer;
+import net.lightbody.bmp.client.ClientUtil;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
-import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.ie.InternetExplorerOptions;
+import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Properties;
 
 public class Application extends ApplicationBase {
@@ -28,9 +30,10 @@ public class Application extends ApplicationBase {
     private Properties properties;
     private enum Browser {
         CHROME,
-        FIREFOX,
-        IE
+        FIREFOX
     }
+    File downloadDir = new File("src\\test\\resources\\download");
+    private BrowserMobProxy proxy;
 
     //Getters
     public WebDriver wd() {
@@ -41,9 +44,20 @@ public class Application extends ApplicationBase {
         return properties;
     }
 
+    public BrowserMobProxy proxy() {
+        return proxy;
+    }
+
+    public File getDownloadDir() {
+        return downloadDir;
+    }
+
     public void init() throws IOException {
+        proxy = new BrowserMobProxyServer();
+        proxy.start(0);
+        Proxy seleniumProxy = ClientUtil.createSeleniumProxy(proxy);
         loadProperties();
-        wd = createDriver(Browser.CHROME);
+        wd = createDriver(Browser.CHROME, seleniumProxy);
         wait = new WebDriverWait(wd, 10);
         actions = new Actions(wd);
         js = (JavascriptExecutor) wd;
@@ -56,22 +70,31 @@ public class Application extends ApplicationBase {
             wd.quit();
     }
 
-    private WebDriver createDriver(Browser browser) {
+    private WebDriver createDriver(Browser browser, Proxy seleniumProxy) {
         WebDriver wd = null;
         switch (browser) {
             case CHROME:
-                wd = new ChromeDriver();
+                Map<String, Object> prefs = new HashMap<>();
+                prefs.put("profile.default_content_settings.popups", 0);
+                prefs.put("download.default_directory", downloadDir.getAbsolutePath());
+                ChromeOptions options = new ChromeOptions();
+                options.setExperimentalOption("prefs", prefs);
+                options.setProxy(seleniumProxy);
+                wd = new ChromeDriver(options);
                 break;
             case FIREFOX:
+                FirefoxProfile profile = new FirefoxProfile();
+                profile.setPreference("browser.download.folderList", 2);
+                profile.setPreference("browser.download.dir", downloadDir.getAbsolutePath());
+                profile.setPreference("browser.download.manager.showWhenStarting", false);
+                profile.setPreference("browser.helperApps.neverAsk.openFile", "application/force-download");
+                profile.setPreference("browser.helperApps.neverAsk.saveToDisk", "application/force-download");
+                profile.setPreference("browser.helperApps.alwaysAsk.force", false);
                 FirefoxOptions ffOptions = new FirefoxOptions();
+                ffOptions.setProfile(profile);
+                ffOptions.setProxy(seleniumProxy);
                 ffOptions.setCapability(CapabilityType.PAGE_LOAD_STRATEGY, "eager");
                 wd = new FirefoxDriver(ffOptions);
-                break;
-            case IE:
-                InternetExplorerOptions ieOptions = new InternetExplorerOptions();
-                ieOptions.introduceFlakinessByIgnoringSecurityDomains();
-                ieOptions.ignoreZoomSettings();
-                wd = new InternetExplorerDriver(ieOptions);
                 break;
         }
         return wd;

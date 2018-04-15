@@ -9,12 +9,12 @@ import java.io.IOException;
 public class CucumberBase {
     public Application app = new Application();
 
-    @Before
+    @Before(order = 0)
     public void setUp() throws IOException {
         app.init();
     }
 
-    @After
+    @After(order = 0)
     public void tearDown(Scenario scenario) throws IOException {
         app.takeScreenshot(scenario);
         app.stop();
