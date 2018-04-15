@@ -112,3 +112,6 @@ public class Application extends ApplicationBase {
         }
     }
 }
+
+//TODO 1) Вынести precondition по открытию нужной страницы и т.п. в @Before(order)
+//TODO 2) Send email with lost password and/or subscribe

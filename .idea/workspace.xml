@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="886ae2ee-5b3f-4b48-8c50-94db27b2031e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/application/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/application/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/base/CucumberBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/CucumberBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/helper/admin_side/CategoryHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/helper/admin_side/CategoryHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/helper/admin_side/NavigationHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/helper/admin_side/NavigationHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/cucumber/admin_side/export_category.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/cucumber/admin_side/export_category.feature" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -60,11 +56,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Application.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Application.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/application/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
-              <caret line="113" column="1" selection-start-line="113" selection-start-column="1" selection-end-line="113" selection-end-column="1" />
+            <state relative-caret-position="748">
+              <caret line="116" column="8" selection-start-line="116" selection-start-column="8" selection-end-line="116" selection-end-column="8" />
               <folding>
                 <element signature="class#Browser#0;class#Application#0" />
                 <element signature="method#stop#0;class#Application#0" />
@@ -72,6 +68,15 @@
                 <element signature="method#loadProperties#0;class#Application#0" />
                 <element signature="method#takeScreenshot#0;class#Application#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CucumberBase.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/base/CucumberBase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="5" column="41" lean-forward="true" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -141,7 +146,6 @@
         <option value="$PROJECT_DIR$/src/test/java/step_definition/admin_side/Category.java" />
         <option value="$PROJECT_DIR$/src/test/java/CategoryExport.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/base/CucumberBase.java" />
         <option value="$PROJECT_DIR$/src/test/resources/cucumber/admin_side/export_category.feature" />
         <option value="$PROJECT_DIR$/src/test/java/CategoryExportRunner.java" />
         <option value="$PROJECT_DIR$/src/test/java/helper/admin_side/NavigationHelper.java" />
@@ -149,10 +153,11 @@
         <option value="$PROJECT_DIR$/src/test/java/helper/admin_side/CategoryHelper.java" />
         <option value="$PROJECT_DIR$/src/test/java/step_definition/admin_side/CategoryExport.java" />
         <option value="$PROJECT_DIR$/src/test/java/application/Application.java" />
+        <option value="$PROJECT_DIR$/src/test/java/base/CucumberBase.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="177" />
     <option name="y" value="144" />
     <option name="width" value="1474" />
@@ -192,6 +197,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="prestashop_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="prestashop" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="prestashop_project" type="b2602c69:ProjectViewProjectNode" />
@@ -246,7 +259,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.CategoryExportRunner">
+  <component name="RunManager" selected="TestNG.LoginRunner">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -412,9 +425,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.LoginRunner" />
         <item itemvalue="TestNG.CategoryExportRunner" />
         <item itemvalue="TestNG.CategoryRunner" />
-        <item itemvalue="TestNG.LoginRunner" />
         <item itemvalue="TestNG.Classsss.test" />
         <item itemvalue="TestNG.Class1.test" />
       </list>
@@ -434,15 +447,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CategoryExportRunner - 2018.04.15 at 16h 15m 47s.xml">
-      <configuration name="CategoryExportRunner" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="CategoryExportRunner - 2018.04.15 at 16h 19m 29s.xml">
-      <configuration name="CategoryExportRunner" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="CategoryExportRunner - 2018.04.15 at 16h 20m 50s.xml">
-      <configuration name="CategoryExportRunner" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="CategoryExportRunner - 2018.04.15 at 16h 22m 23s.xml">
       <configuration name="CategoryExportRunner" configurationId="TestNG" />
     </history-entry>
@@ -463,6 +467,15 @@
     </history-entry>
     <history-entry file="CategoryExportRunner - 2018.04.15 at 16h 31m 01s.xml">
       <configuration name="CategoryExportRunner" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="LoginRunner - 2018.04.15 at 16h 38m 32s.xml">
+      <configuration name="LoginRunner" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="LoginRunner - 2018.04.15 at 16h 38m 40s.xml">
+      <configuration name="LoginRunner" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="LoginRunner - 2018.04.15 at 16h 39m 16s.xml">
+      <configuration name="LoginRunner" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -508,26 +521,32 @@
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
       <expression>
-        <expression-string />
+        <expression-string>actions.moveByOffset(5, 5).click().build(
+        
+        
+        
+        
+        
+).perform();</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
     </expressions>
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string />
+        <expression-string>base.app.wd() instanceof ChromeDriver</expression-string>
         <language-id>JAVA</language-id>
         <custom-info>org.openqa.selenium.chrome.ChromeDriver,org.openqa.selenium.firefox.FirefoxDriver</custom-info>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string />
+        <expression-string>base.app.wd() instanceof FirefoxDriver</expression-string>
         <language-id>JAVA</language-id>
         <custom-info>org.openqa.selenium.chrome.ChromeDriver,org.openqa.selenium.firefox.FirefoxDriver</custom-info>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string />
+        <expression-string>base.app.wd() instanceof ChromeDriver</expression-string>
         <language-id>JAVA</language-id>
         <custom-info>org.openqa.selenium.chrome.ChromeDriver</custom-info>
         <evaluation-mode>EXPRESSION</evaluation-mode>
@@ -544,19 +563,19 @@
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string />
+        <expression-string>proxy.getHar().getLog().getEntries().stream().filter(i -&gt; i.getRequest().getMethod().equals(&quot;GET&quot;) &amp;&amp; i.getRequest().getUrl().contains(&quot;localhost&quot;) &amp;&amp; i.getResponse().getContent().getMimeType().contains(&quot;application/force-download&quot;)).collect(Collectors.toList())</expression-string>
         <language-id>JAVA</language-id>
         <custom-info>java.util.stream.Collectors</custom-info>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string />
+        <expression-string>proxy.getHar().getLog().getEntries().stream().filter(i -&gt; i.getRequest().getMethod().equals(&quot;GET&quot;) &amp;&amp; i.getRequest().getUrl().contains(&quot;localhost&quot;) &amp;&amp; i.getResponse().getContent().getMimeType().contains(&quot;application&quot;)).collect(Collectors.toList())</expression-string>
         <language-id>JAVA</language-id>
         <custom-info>java.util.stream.Collectors</custom-info>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string />
+        <expression-string>proxy.getHar().getLog().getEntries().stream().filter(i -&gt; i.getRequest().getMethod().equals(&quot;GET&quot;) &amp;&amp; i.getRequest().getUrl().contains(&quot;localhost&quot;)).collect(Collectors.toList())</expression-string>
         <language-id>JAVA</language-id>
         <custom-info>java.util.stream.Collectors</custom-info>
         <evaluation-mode>EXPRESSION</evaluation-mode>
@@ -567,7 +586,7 @@
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string />
+        <expression-string>proxy.getHar().getLog().getEntries().stream().filter(i -&gt; i.getResponse().getStatus() == 200 &amp;&amp; i.getResponse().getContent().getMimeType().equals(&quot;application/octet-stream&quot;)).collect(Collectors.toList())</expression-string>
         <language-id>JAVA</language-id>
         <custom-info>java.util.stream.Collectors</custom-info>
         <evaluation-mode>EXPRESSION</evaluation-mode>
@@ -779,13 +798,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/base/CucumberBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/io/cucumber/cucumber-java8/2.4.0/cucumber-java8-2.4.0.jar!/cucumber/api/java8/En.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -923,8 +935,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/application/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="113" column="1" selection-start-line="113" selection-start-column="1" selection-end-line="113" selection-end-column="1" />
+        <state relative-caret-position="748">
+          <caret line="116" column="8" selection-start-line="116" selection-start-column="8" selection-end-line="116" selection-end-column="8" />
           <folding>
             <element signature="class#Browser#0;class#Application#0" />
             <element signature="method#stop#0;class#Application#0" />
@@ -932,6 +944,13 @@
             <element signature="method#loadProperties#0;class#Application#0" />
             <element signature="method#takeScreenshot#0;class#Application#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/base/CucumberBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="41" lean-forward="true" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
         </state>
       </provider>
     </entry>
