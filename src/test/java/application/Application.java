@@ -12,9 +12,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.CapabilityType;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
@@ -23,16 +21,12 @@ import java.util.Map;
 import java.util.Properties;
 
 public class Application extends ApplicationBase {
-    private WebDriver wd;
-    private WebDriverWait wait;
-    private Actions actions;
-    private JavascriptExecutor js;
     private Properties properties;
     private enum Browser {
         CHROME,
         FIREFOX
     }
-    File downloadDir = new File("src\\test\\resources\\download");
+    private File downloadDir = new File("src\\test\\resources\\download");
     private BrowserMobProxy proxy;
 
     //Getters
@@ -40,7 +34,11 @@ public class Application extends ApplicationBase {
         return wd;
     }
 
-    public Properties properties() {
+    public Properties properties() throws IOException {
+        if (properties == null) {
+            properties = new Properties();
+            properties.load(new FileReader(new File("src/test/resources/property/admin.properties")));
+        }
         return properties;
     }
 
@@ -56,13 +54,8 @@ public class Application extends ApplicationBase {
         proxy = new BrowserMobProxyServer();
         proxy.start(0);
         Proxy seleniumProxy = ClientUtil.createSeleniumProxy(proxy);
-        loadProperties();
         wd = createDriver(Browser.CHROME, seleniumProxy);
-        wait = new WebDriverWait(wd, 10);
-        actions = new Actions(wd);
-        js = (JavascriptExecutor) wd;
         wd.manage().window().maximize();
-        initDelegate(wd);
     }
 
     public void stop() {
@@ -100,11 +93,6 @@ public class Application extends ApplicationBase {
         return wd;
     }
 
-    private void loadProperties() throws IOException {
-        properties = new Properties();
-        properties.load(new FileReader(new File("src/test/resources/property/admin.properties")));
-    }
-
     public void takeScreenshot(Scenario scenario) throws IOException {
         if (scenario.isFailed()) {
             File screenshot = ((TakesScreenshot) wd).getScreenshotAs(OutputType.FILE);
@@ -112,6 +100,3 @@ public class Application extends ApplicationBase {
         }
     }
 }
-
-//TODO 1) Вынести precondition по открытию нужной страницы и т.п. в @Before(order)
-//TODO 2) Send email with lost password and/or subscribe

@@ -1,6 +1,7 @@
 package base;
 
 import application.Application;
+import cucumber.api.Scenario;
 import cucumber.api.java8.En;
 
 public class CucumberBase implements En {
@@ -11,7 +12,8 @@ public class CucumberBase implements En {
             app.init();
         });
 
-        After(() -> {
+        After((Scenario scenario) -> {
+            app.takeScreenshot(scenario);
             app.stop();
         });
     }

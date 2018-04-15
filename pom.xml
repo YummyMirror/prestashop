@@ -47,6 +47,18 @@
             <scope>test</scope>
         </dependency>
 
+        <dependency>
+            <groupId>org.subethamail</groupId>
+            <artifactId>subethasmtp</artifactId>
+            <version>3.1.7</version>
+        </dependency>
+
+        <dependency>
+            <groupId>ru.lanwen.verbalregex</groupId>
+            <artifactId>java-verbal-expressions</artifactId>
+            <version>1.5</version>
+        </dependency>
+
     </dependencies>
 
     <build>
