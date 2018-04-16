@@ -37,7 +37,7 @@ public class Application extends ApplicationBase {
     public Properties properties() throws IOException {
         if (properties == null) {
             properties = new Properties();
-            properties.load(new FileReader(new File("src/test/resources/property/admin.properties")));
+            properties.load(new FileReader(new File("src/test/resources/property/local.properties")));
         }
         return properties;
     }

@@ -4,9 +4,11 @@
     <list default="true" id="886ae2ee-5b3f-4b48-8c50-94db27b2031e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CategoryExportRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/admin_side/CategoryExportRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CategoryRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/admin_side/CategoryRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LoginRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/admin_side/LoginRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/application/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/application/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/base/ApplicationBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/ApplicationBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/base/CucumberBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/CucumberBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/property/admin.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/property/local.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,11 +20,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+            <state relative-caret-position="425">
+              <caret line="85" column="24" selection-start-line="85" selection-start-column="24" selection-end-line="85" selection-end-column="24" />
               <folding>
                 <element signature="n#dependencies#0;n#project#0;n#!!top" />
                 <element signature="n#dependency#0;n#dependencies#0;n#project#0;n#!!top" />
@@ -32,18 +34,26 @@
                 <element signature="n#dependency#4;n#dependencies#0;n#project#0;n#!!top" />
                 <element signature="n#dependency#5;n#dependencies#0;n#project#0;n#!!top" />
                 <element signature="n#dependency#6;n#dependencies#0;n#project#0;n#!!top" />
-                <element signature="n#dependency#7;n#dependencies#0;n#project#0;n#!!top" />
                 <element signature="n#plugin#0;n#plugins#0;n#build#0;n#project#0;n#!!top" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Application.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="admin_side.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/config_file/admin_side.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="55" selection-start-line="4" selection-start-column="55" selection-end-line="4" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Application.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/application/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="101" column="1" selection-start-line="101" selection-start-column="1" selection-end-line="101" selection-end-column="1" />
+            <state relative-caret-position="221">
+              <caret line="36" column="54" selection-start-line="36" selection-start-column="54" selection-end-line="36" selection-end-column="54" />
               <folding>
                 <element signature="class#Browser#0;class#Application#0" />
                 <element signature="method#properties#0;class#Application#0" />
@@ -55,15 +65,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Classssssss.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Classssssss.java">
+      <file leaf-file-name="AllRunner.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/runner/admin_side/AllRunner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
-              <folding>
-                <element signature="method#setUp#0;class#Classssssss#0" />
-                <element signature="method#tearDown#0;class#Classssssss#0" />
-              </folding>
+            <state relative-caret-position="119">
+              <caret line="8" column="89" selection-start-line="8" selection-start-column="89" selection-end-line="8" selection-end-column="89" />
             </state>
           </provider>
         </entry>
@@ -121,20 +127,25 @@
         <option value="$PROJECT_DIR$/src/test/java/helper/admin_side/NavigationHelper.java" />
         <option value="$PROJECT_DIR$/src/test/java/helper/admin_side/CategoryHelper.java" />
         <option value="$PROJECT_DIR$/src/test/java/step_definition/admin_side/CategoryExport.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/base/CucumberBase.java" />
         <option value="$PROJECT_DIR$/src/test/java/base/ApplicationBase.java" />
         <option value="$PROJECT_DIR$/src/test/java/Classssssss.java" />
         <option value="$PROJECT_DIR$/src/test/java/base/HelperBase.java" />
+        <option value="$PROJECT_DIR$/src/test/java/runner/CategoryExportRunner.java" />
+        <option value="$PROJECT_DIR$/src/test/java/runner/admin_side.java" />
+        <option value="$PROJECT_DIR$/src/test/java/runner/admin_side/LoginRunner.java" />
         <option value="$PROJECT_DIR$/src/test/java/application/Application.java" />
+        <option value="$PROJECT_DIR$/src/test/java/runner/admin_side/AllRunner.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/config_file/admin_side.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="322" />
-    <option name="y" value="159" />
-    <option name="width" value="1474" />
-    <option name="height" value="812" />
+    <option name="x" value="127" />
+    <option name="y" value="204" />
+    <option name="width" value="1391" />
+    <option name="height" value="813" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -177,7 +188,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
+              <item name="runner" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="prestashop_project" type="b2602c69:ProjectViewProjectNode" />
@@ -185,15 +196,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="step_definition" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="prestashop_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="prestashop" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="step_definition" type="462c0819:PsiDirectoryNode" />
+              <item name="runner" type="462c0819:PsiDirectoryNode" />
               <item name="admin_side" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -201,7 +204,23 @@
               <item name="prestashop" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="step_definition" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="prestashop_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="prestashop" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="prestashop_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="prestashop" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="config_file" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="prestashop_project" type="b2602c69:ProjectViewProjectNode" />
@@ -226,7 +245,12 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="screenshot" type="462c0819:PsiDirectoryNode" />
+              <item name="download" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="prestashop_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="prestashop" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -239,11 +263,14 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/step_definition/admin_side" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\Private\Work\Repositories\prestashop\src\test\resources\image" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\Private\Work\Repositories\prestashop\src\test\resources\cucumber\admin_side" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="runner" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Private\Work\Repositories\prestashop\src\test\resources\image" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -258,7 +285,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.LoginRunner">
+  <component name="RunManager" selected="TestNG.AllRunner">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -278,13 +305,42 @@
       </option>
       <patterns />
     </configuration>
+    <configuration name="AllRunner" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="prestashop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="runner.admin_side.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="runner.admin_side" />
+      <option name="MAIN_CLASS_NAME" value="runner.admin_side.AllRunner" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
     <configuration name="CategoryExportRunner" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="prestashop" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CategoryExportRunner" />
+      <option name="MAIN_CLASS_NAME" value="runner.admin_side.CategoryExportRunner" />
       <option name="METHOD_NAME" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="CLASS" />
@@ -307,53 +363,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CategoryRunner" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <properties />
-      <listeners />
-    </configuration>
-    <configuration name="Classsss.test" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="prestashop" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Classsss" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <properties />
-      <listeners />
-    </configuration>
-    <configuration name="Classssssss" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="prestashop" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Classssssss" />
+      <option name="MAIN_CLASS_NAME" value="runner.admin_side.CategoryRunner" />
       <option name="METHOD_NAME" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="CLASS" />
@@ -376,7 +386,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LoginRunner" />
+      <option name="MAIN_CLASS_NAME" value="runner.admin_side.LoginRunner" />
       <option name="METHOD_NAME" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="CLASS" />
@@ -415,20 +425,49 @@
       <properties />
       <listeners />
     </configuration>
+    <configuration name="runner.admin_side" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="prestashop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="runner.admin_side.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="runner.admin_side" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="PACKAGE" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
     <list>
       <item itemvalue="TestNG.LoginRunner" />
-      <item itemvalue="TestNG.Classsss.test" />
       <item itemvalue="TestNG.CategoryRunner" />
       <item itemvalue="TestNG.CategoryExportRunner" />
-      <item itemvalue="TestNG.Classssssss" />
+      <item itemvalue="TestNG.runner.admin_side" />
+      <item itemvalue="TestNG.AllRunner" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.AllRunner" />
+        <item itemvalue="TestNG.runner.admin_side" />
         <item itemvalue="TestNG.LoginRunner" />
-        <item itemvalue="TestNG.Classssssss" />
-        <item itemvalue="TestNG.CategoryExportRunner" />
         <item itemvalue="TestNG.CategoryRunner" />
-        <item itemvalue="TestNG.Classsss.test" />
+        <item itemvalue="TestNG.CategoryExportRunner" />
       </list>
     </recent_temporary>
   </component>
@@ -446,40 +485,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Classssssss - 2018.04.15 at 22h 58m 46s.xml">
-      <configuration name="Classssssss" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Classssssss - 2018.04.15 at 23h 01m 11s.xml">
-      <configuration name="Classssssss" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="LoginRunner - 2018.04.15 at 23h 05m 24s.xml">
-      <configuration name="LoginRunner" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="CategoryRunner - 2018.04.15 at 23h 06m 47s.xml">
-      <configuration name="CategoryRunner" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="CategoryExportRunner - 2018.04.15 at 23h 08m 18s.xml">
-      <configuration name="CategoryExportRunner" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="LoginRunner - 2018.04.15 at 23h 15m 17s.xml">
-      <configuration name="LoginRunner" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="CategoryRunner - 2018.04.15 at 23h 16m 31s.xml">
-      <configuration name="CategoryRunner" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="CategoryExportRunner - 2018.04.15 at 23h 17m 17s.xml">
-      <configuration name="CategoryExportRunner" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="Classssssss - 2018.04.15 at 23h 18m 05s.xml">
       <configuration name="Classssssss" configurationId="TestNG" />
     </history-entry>
     <history-entry file="LoginRunner - 2018.04.15 at 23h 21m 27s.xml">
       <configuration name="LoginRunner" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="CategoryExportRunner - 2018.04.16 at 10h 42m 02s.xml">
+      <configuration name="CategoryExportRunner" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="CategoryExportRunner_(1) - 2018.04.16 at 10h 42m 31s.xml">
+      <configuration name="CategoryExportRunner (1)" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="CategoryExportRunner - 2018.04.16 at 10h 56m 04s.xml">
+      <configuration name="CategoryExportRunner" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="CategoryRunner - 2018.04.16 at 10h 57m 29s.xml">
+      <configuration name="CategoryRunner" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="LoginRunner - 2018.04.16 at 10h 57m 46s.xml">
+      <configuration name="LoginRunner" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="runner_admin_side - 2018.04.16 at 11h 01m 26s.xml">
+      <configuration name="runner.admin_side" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="AllRunner - 2018.04.16 at 11h 06m 21s.xml">
+      <configuration name="AllRunner" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="AllRunner - 2018.04.16 at 11h 16m 15s.xml">
+      <configuration name="AllRunner" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="bottom" id="TODO" order="10" />
@@ -490,11 +528,11 @@
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" weight="0.32963374" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Version Control" order="2" />
-      <window_info anchor="bottom" id="Run" order="6" weight="0.18423973" />
-      <window_info anchor="bottom" id="Terminal" order="0" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.26859045" />
+      <window_info anchor="bottom" id="Terminal" order="0" visible="true" weight="0.32963374" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="0" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.19616205" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.19616205" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.32963374" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
@@ -514,14 +552,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/Classssssss.java</url>
-          <line>26</line>
-          <properties />
-          <option name="timeStamp" value="110" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="111" />
     </breakpoint-manager>
   </component>
@@ -601,7 +631,6 @@
             <element signature="n#dependency#4;n#dependencies#0;n#project#0;n#!!top" />
             <element signature="n#dependency#5;n#dependencies#0;n#project#0;n#!!top" />
             <element signature="n#dependency#6;n#dependencies#0;n#project#0;n#!!top" />
-            <element signature="n#dependency#7;n#dependencies#0;n#project#0;n#!!top" />
             <element signature="n#plugin#0;n#plugins#0;n#build#0;n#project#0;n#!!top" />
           </folding>
         </state>
@@ -726,13 +755,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/CategoryRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/picocontainer/picocontainer/2.15/picocontainer-2.15.jar!/org/picocontainer/injectors/AbstractInjector.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -775,7 +797,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/property/admin.properties">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/property/local.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" selection-start-line="2" selection-end-line="2" />
@@ -880,35 +902,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/CategoryExportRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="6" column="71" selection-start-line="6" selection-start-column="71" selection-end-line="6" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/step_definition/admin_side/Category.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Classssssss.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="method#setUp#0;class#Classssssss#0" />
-            <element signature="method#tearDown#0;class#Classssssss#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/LoginRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -928,18 +925,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/base/ApplicationBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-          <folding>
-            <element signature="method#login2#0;class#ApplicationBase#0" />
-            <element signature="method#navigate2#0;class#ApplicationBase#0" />
-            <element signature="method#category2#0;class#ApplicationBase#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/helper/admin_side/LoginHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -952,10 +937,96 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Classssssss.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="method#setUp#0;class#Classssssss#0" />
+            <element signature="method#tearDown#0;class#Classssssss#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/base/ApplicationBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+          <folding>
+            <element signature="method#login#0;class#ApplicationBase#0" />
+            <element signature="method#navigate#0;class#ApplicationBase#0" />
+            <element signature="method#category#0;class#ApplicationBase#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/runner/admin_side/CategoryExportRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="6" column="71" selection-start-line="6" selection-start-column="71" selection-end-line="6" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/runner/admin_side.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/runner/admin_side/CategoryRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/runner/admin_side/LoginRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/application/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="36" column="54" selection-start-line="36" selection-start-column="54" selection-end-line="36" selection-end-column="54" />
+          <folding>
+            <element signature="class#Browser#0;class#Application#0" />
+            <element signature="method#properties#0;class#Application#0" />
+            <element signature="method#stop#0;class#Application#0" />
+            <element signature="method#createDriver#0;class#Application#0" />
+            <element signature="method#takeScreenshot#0;class#Application#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/runner/admin_side/CategoryExportRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/runner/admin_side/AllRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="89" selection-start-line="8" selection-start-column="89" selection-end-line="8" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/config_file/admin_side.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="55" selection-start-line="4" selection-start-column="55" selection-end-line="4" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        <state relative-caret-position="425">
+          <caret line="85" column="24" selection-start-line="85" selection-start-column="24" selection-end-line="85" selection-end-column="24" />
           <folding>
             <element signature="n#dependencies#0;n#project#0;n#!!top" />
             <element signature="n#dependency#0;n#dependencies#0;n#project#0;n#!!top" />
@@ -965,22 +1036,7 @@
             <element signature="n#dependency#4;n#dependencies#0;n#project#0;n#!!top" />
             <element signature="n#dependency#5;n#dependencies#0;n#project#0;n#!!top" />
             <element signature="n#dependency#6;n#dependencies#0;n#project#0;n#!!top" />
-            <element signature="n#dependency#7;n#dependencies#0;n#project#0;n#!!top" />
             <element signature="n#plugin#0;n#plugins#0;n#build#0;n#project#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/application/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="101" column="1" selection-start-line="101" selection-start-column="1" selection-end-line="101" selection-end-column="1" />
-          <folding>
-            <element signature="class#Browser#0;class#Application#0" />
-            <element signature="method#properties#0;class#Application#0" />
-            <element signature="method#stop#0;class#Application#0" />
-            <element signature="method#createDriver#0;class#Application#0" />
-            <element signature="method#takeScreenshot#0;class#Application#0" />
           </folding>
         </state>
       </provider>

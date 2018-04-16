@@ -1,3 +1,5 @@
+package runner.admin_side;
+
 import cucumber.api.CucumberOptions;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
 
