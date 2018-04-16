@@ -5,12 +5,12 @@ Feature: Checking login form
 
   Scenario: Valid login
     When I enter both valid 'username' and 'password'
-    And I click the login page
+    And I click the login button
     Then I verify that user is logged in
 
   Scenario Outline: Invalid login
     When I enter invalid '<username>' and '<password>'
-    And I click the login page
+    And I click the login button
     Then I verify that user is not logged in
 
     Examples: Invalid login data

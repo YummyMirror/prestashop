@@ -6,9 +6,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import static org.openqa.selenium.support.ui.ExpectedConditions.*;
 
-public class LoginHelper extends HelperBase {
+public class LoginHelperA extends HelperBase {
     //Constructor
-    public LoginHelper(WebDriver wd) {
+    public LoginHelperA(WebDriver wd) {
         super(wd);
     }
 

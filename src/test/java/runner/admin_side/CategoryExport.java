@@ -3,7 +3,7 @@ package runner.admin_side;
 import cucumber.api.CucumberOptions;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
 
-@CucumberOptions(features = {"src/test/resources/cucumber/admin_side/category.feature"},
+@CucumberOptions(features = {"src/test/resources/cucumber/admin_side/export_category.feature"},
                  glue = {"base", "step_definition"},
                  strict = true)
-public class CategoryRunner extends AbstractTestNGCucumberTests {}
+public class CategoryExport extends AbstractTestNGCucumberTests {}

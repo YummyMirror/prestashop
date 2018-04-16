@@ -50,7 +50,7 @@ public class Application extends ApplicationBase {
         return downloadDir;
     }
 
-    public void init() throws IOException {
+    public void init() {
         proxy = new BrowserMobProxyServer();
         proxy.start(0);
         Proxy seleniumProxy = ClientUtil.createSeleniumProxy(proxy);

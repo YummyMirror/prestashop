@@ -3,12 +3,22 @@
   <component name="ChangeListManager">
     <list default="true" id="886ae2ee-5b3f-4b48-8c50-94db27b2031e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CategoryExportRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/admin_side/CategoryExportRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CategoryRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/admin_side/CategoryRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/LoginRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/admin_side/LoginRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/application/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/application/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/property/admin.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/property/local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/ApplicationBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/ApplicationBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/helper/admin_side/CategoryHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/helper/admin_side/CategoryHelperA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/helper/admin_side/LoginHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/helper/admin_side/LoginHelperA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/helper/admin_side/NavigationHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/helper/admin_side/NavigationHelperA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/model/admin_side/UserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/model/admin_side/UserData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runner/admin_side/AllRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/admin_side/All.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runner/admin_side/CategoryExportRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/admin_side/CategoryExport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runner/admin_side/CategoryRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/admin_side/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runner/admin_side/LoginRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/admin_side/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/step_definition/admin_side/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/step_definition/admin_side/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/step_definition/admin_side/CategoryExport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/step_definition/admin_side/CategoryExport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/step_definition/admin_side/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/step_definition/admin_side/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/config_file/admin_side.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config_file/admin_side.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/cucumber/admin_side/login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/cucumber/admin_side/login.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/property/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/property/local.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,7 +30,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="425">
@@ -40,20 +50,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin_side.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/config_file/admin_side.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="55" selection-start-line="4" selection-start-column="55" selection-end-line="4" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Application.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/application/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="36" column="54" selection-start-line="36" selection-start-column="54" selection-end-line="36" selection-end-column="54" />
+            <state relative-caret-position="17">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
               <folding>
                 <element signature="class#Browser#0;class#Application#0" />
                 <element signature="method#properties#0;class#Application#0" />
@@ -65,11 +66,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AllRunner.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/runner/admin_side/AllRunner.java">
+      <file leaf-file-name="CategoryHelperA.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/helper/admin_side/CategoryHelperA.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="8" column="89" selection-start-line="8" selection-start-column="89" selection-end-line="8" selection-end-column="89" />
+            <state relative-caret-position="238">
+              <caret line="27" column="44" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
+              <folding>
+                <element signature="e#3877#3878#0" expanded="true" />
+                <element signature="e#3945#3946#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -96,56 +101,65 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/helper/LOginHelper.java" />
-        <option value="$PROJECT_DIR$/src/test/java/model/LoginData.java" />
-        <option value="$PROJECT_DIR$/src/test/java/MyStepdefs.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/cucumber/login.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/step_definition/Login.java" />
-        <option value="$PROJECT_DIR$/src/test/java/step_definition/AdminLogin.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Class1.java" />
-        <option value="$PROJECT_DIR$/src/test/java/helper/LoginHelper.java" />
-        <option value="$PROJECT_DIR$/src/test/java/helper/NavigateHelper.java" />
-        <option value="$PROJECT_DIR$/src/test/java/step_definition/admin_side/AdminLogin.java" />
-        <option value="$PROJECT_DIR$/src/test/java/helper/admin_side/NavigateHelper.java" />
-        <option value="$PROJECT_DIR$/src/test/java/LoginRunner.java" />
-        <option value="$PROJECT_DIR$/src/test/java/model/admin_side/LoginData.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Classsss.java" />
-        <option value="$PROJECT_DIR$/src/test/java/model/admin_side/Category.java" />
-        <option value="$PROJECT_DIR$/src/test/java/model/admin_side/CategoryData.java" />
-        <option value="$PROJECT_DIR$/src/test/java/model/admin_side/User.java" />
-        <option value="$PROJECT_DIR$/src/test/java/model/admin_side/UserData.java" />
-        <option value="$PROJECT_DIR$/src/test/java/CategoryRunner.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/cucumber/admin_side/category.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/helper/admin_side/LoginHelper.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/property/admin.properties" />
-        <option value="$PROJECT_DIR$/src/test/resources/cucumber/admin_side/login.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/step_definition/admin_side/Login.java" />
-        <option value="$PROJECT_DIR$/src/test/java/step_definition/admin_side/Category.java" />
         <option value="$PROJECT_DIR$/src/test/java/CategoryExport.java" />
         <option value="$PROJECT_DIR$/src/test/resources/cucumber/admin_side/export_category.feature" />
         <option value="$PROJECT_DIR$/src/test/java/CategoryExportRunner.java" />
-        <option value="$PROJECT_DIR$/src/test/java/helper/admin_side/NavigationHelper.java" />
-        <option value="$PROJECT_DIR$/src/test/java/helper/admin_side/CategoryHelper.java" />
-        <option value="$PROJECT_DIR$/src/test/java/step_definition/admin_side/CategoryExport.java" />
         <option value="$PROJECT_DIR$/src/test/java/base/CucumberBase.java" />
-        <option value="$PROJECT_DIR$/src/test/java/base/ApplicationBase.java" />
         <option value="$PROJECT_DIR$/src/test/java/Classssssss.java" />
         <option value="$PROJECT_DIR$/src/test/java/base/HelperBase.java" />
         <option value="$PROJECT_DIR$/src/test/java/runner/CategoryExportRunner.java" />
         <option value="$PROJECT_DIR$/src/test/java/runner/admin_side.java" />
-        <option value="$PROJECT_DIR$/src/test/java/runner/admin_side/LoginRunner.java" />
-        <option value="$PROJECT_DIR$/src/test/java/application/Application.java" />
-        <option value="$PROJECT_DIR$/src/test/java/runner/admin_side/AllRunner.java" />
         <option value="$PROJECT_DIR$/src/test/resources/config_file/admin_side.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/resources/property/local.properties" />
+        <option value="$PROJECT_DIR$/src/test/java/model/public_side/UserData.java" />
+        <option value="$PROJECT_DIR$/src/test/java/helper/public_side/LoginHelper.java" />
+        <option value="$PROJECT_DIR$/src/test/java/helper/admin_side/CategoryHelper.java" />
+        <option value="$PROJECT_DIR$/src/test/java/helper/admin_side/LoginHelper.java" />
+        <option value="$PROJECT_DIR$/src/test/java/helper/admin_side/LoginHelperA.java" />
+        <option value="$PROJECT_DIR$/src/test/java/helper/admin_side/NavigationHelper.java" />
+        <option value="$PROJECT_DIR$/src/test/java/helper/admin_side/NavigationHelperA.java" />
+        <option value="$PROJECT_DIR$/src/test/java/step_definition/admin_side/Category.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/cucumber/public_side/login.feature" />
+        <option value="$PROJECT_DIR$/src/test/resources/cucumber/admin_side/login.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/step_definition/admin_side/Login.java" />
+        <option value="$PROJECT_DIR$/src/test/java/helper/public_side/ForgotPasswordP.java" />
+        <option value="$PROJECT_DIR$/src/test/java/helper/WiserHelper.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/cucumber/public_side/send_forgot_password.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/helper/public_side/LoginHelperP.java" />
+        <option value="$PROJECT_DIR$/src/test/java/helper/public_side/NavigationHelperP.java" />
+        <option value="$PROJECT_DIR$/src/test/java/helper/public_side/ForgotPasswordHelperP.java" />
+        <option value="$PROJECT_DIR$/src/test/java/step_definition/public_side/SendForgotPass.java" />
+        <option value="$PROJECT_DIR$/src/test/java/step_definition/public_side/Login.java" />
+        <option value="$PROJECT_DIR$/src/test/java/application/Application.java" />
+        <option value="$PROJECT_DIR$/src/test/java/base/ApplicationBase.java" />
+        <option value="$PROJECT_DIR$/src/test/java/helper/service/WiserHelper.java" />
+        <option value="$PROJECT_DIR$/src/test/java/runner/public_side/SendForgotPassRunner.java" />
+        <option value="$PROJECT_DIR$/src/test/java/runner/public_side/SendForgotPass.java" />
+        <option value="$PROJECT_DIR$/src/test/java/runner/public_side/LoginRunner.java" />
+        <option value="$PROJECT_DIR$/src/test/java/runner/public_side/Login.java" />
+        <option value="$PROJECT_DIR$/src/test/java/runner/admin_side/AllRunner.java" />
+        <option value="$PROJECT_DIR$/src/test/java/runner/admin_side/All.java" />
+        <option value="$PROJECT_DIR$/src/test/java/runner/admin_side/CategoryExportRunner.java" />
+        <option value="$PROJECT_DIR$/src/test/java/runner/admin_side/CategoryExport.java" />
+        <option value="$PROJECT_DIR$/src/test/java/runner/admin_side/CategoryRunner.java" />
+        <option value="$PROJECT_DIR$/src/test/java/runner/admin_side/Category.java" />
+        <option value="$PROJECT_DIR$/src/test/java/runner/admin_side/LoginRunner.java" />
+        <option value="$PROJECT_DIR$/src/test/java/runner/admin_side/Login.java" />
+        <option value="$PROJECT_DIR$/src/test/java/runner/public_side/All.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/config_file/public_side.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/runner/Global.java" />
+        <option value="$PROJECT_DIR$/src/test/java/step_definition/admin_side/CategoryExport.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/config_file/all_run.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/helper/admin_side/CategoryHelperA.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="127" />
-    <option name="y" value="204" />
-    <option name="width" value="1391" />
-    <option name="height" value="813" />
+    <option name="x" value="381" />
+    <option name="y" value="219" />
+    <option name="width" value="1474" />
+    <option name="height" value="812" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -188,7 +202,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="runner" type="462c0819:PsiDirectoryNode" />
+              <item name="helper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="prestashop_project" type="b2602c69:ProjectViewProjectNode" />
@@ -196,7 +210,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="runner" type="462c0819:PsiDirectoryNode" />
+              <item name="helper" type="462c0819:PsiDirectoryNode" />
               <item name="admin_side" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -205,52 +219,8 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="step_definition" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="prestashop_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="prestashop" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="prestashop_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="prestashop" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="config_file" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="prestashop_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="prestashop" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="cucumber" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="prestashop_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="prestashop" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="cucumber" type="462c0819:PsiDirectoryNode" />
-              <item name="admin_side" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="prestashop_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="prestashop" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="download" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="prestashop_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="prestashop" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="helper" type="462c0819:PsiDirectoryNode" />
+              <item name="public_side" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -260,7 +230,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/step_definition/admin_side" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/step_definition/public_side" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -285,7 +255,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.AllRunner">
+  <component name="RunManager" selected="TestNG.Global">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -305,19 +275,19 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="AllRunner" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="All" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="prestashop" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="runner.admin_side.*" />
+          <option name="PATTERN" value="runner.public_side.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="runner.admin_side" />
-      <option name="MAIN_CLASS_NAME" value="runner.admin_side.AllRunner" />
+      <option name="PACKAGE_NAME" value="runner.public_side" />
+      <option name="MAIN_CLASS_NAME" value="runner.public_side.All" />
       <option name="METHOD_NAME" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="CLASS" />
@@ -334,13 +304,42 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="CategoryExportRunner" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="F:/Private/Work/Repositories/prestashop/src/test/resources/config_file/public_side.xml" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="prestashop" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/config_file/public_side.xml" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="Global" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="prestashop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="runner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="runner.admin_side.CategoryExportRunner" />
+      <option name="PACKAGE_NAME" value="runner" />
+      <option name="MAIN_CLASS_NAME" value="runner.Global" />
       <option name="METHOD_NAME" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="CLASS" />
@@ -357,13 +356,19 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="CategoryRunner" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Login" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="prestashop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="runner.public_side.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="runner.admin_side.CategoryRunner" />
+      <option name="PACKAGE_NAME" value="runner.public_side" />
+      <option name="MAIN_CLASS_NAME" value="runner.public_side.Login" />
       <option name="METHOD_NAME" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="CLASS" />
@@ -380,13 +385,19 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="LoginRunner" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SendForgotPass" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="prestashop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="runner.public_side.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="runner.admin_side.LoginRunner" />
+      <option name="PACKAGE_NAME" value="runner.public_side" />
+      <option name="MAIN_CLASS_NAME" value="runner.public_side.SendForgotPass" />
       <option name="METHOD_NAME" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="CLASS" />
@@ -425,49 +436,20 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="runner.admin_side" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="prestashop" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="runner.admin_side.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="runner.admin_side" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="PACKAGE" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <properties />
-      <listeners />
-    </configuration>
     <list>
-      <item itemvalue="TestNG.LoginRunner" />
-      <item itemvalue="TestNG.CategoryRunner" />
-      <item itemvalue="TestNG.CategoryExportRunner" />
-      <item itemvalue="TestNG.runner.admin_side" />
-      <item itemvalue="TestNG.AllRunner" />
+      <item itemvalue="TestNG.LoginRunner (1)" />
+      <item itemvalue="TestNG.SendForgotPassRunner" />
+      <item itemvalue="TestNG.All" />
+      <item itemvalue="TestNG.F:/Private/Work/Repositories/prestashop/src/test/resources/config_file/public_side.xml" />
+      <item itemvalue="TestNG.Global" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.AllRunner" />
-        <item itemvalue="TestNG.runner.admin_side" />
-        <item itemvalue="TestNG.LoginRunner" />
-        <item itemvalue="TestNG.CategoryRunner" />
-        <item itemvalue="TestNG.CategoryExportRunner" />
+        <item itemvalue="TestNG.Global" />
+        <item itemvalue="TestNG.F:/Private/Work/Repositories/prestashop/src/test/resources/config_file/public_side.xml" />
+        <item itemvalue="TestNG.All" />
+        <item itemvalue="TestNG.SendForgotPassRunner" />
+        <item itemvalue="TestNG.LoginRunner (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -485,39 +467,40 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Classssssss - 2018.04.15 at 23h 18m 05s.xml">
-      <configuration name="Classssssss" configurationId="TestNG" />
+    <history-entry file="SendForgotPass - 2018.04.16 at 13h 46m 40s.xml">
+      <configuration name="SendForgotPass" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="LoginRunner - 2018.04.15 at 23h 21m 27s.xml">
-      <configuration name="LoginRunner" configurationId="TestNG" />
+    <history-entry file="SendForgotPass - 2018.04.16 at 13h 47m 07s.xml">
+      <configuration name="SendForgotPass" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="CategoryExportRunner - 2018.04.16 at 10h 42m 02s.xml">
-      <configuration name="CategoryExportRunner" configurationId="TestNG" />
+    <history-entry file="SendForgotPass - 2018.04.16 at 13h 48m 39s.xml">
+      <configuration name="SendForgotPass" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="CategoryExportRunner_(1) - 2018.04.16 at 10h 42m 31s.xml">
-      <configuration name="CategoryExportRunner (1)" configurationId="TestNG" />
+    <history-entry file="SendForgotPass - 2018.04.16 at 14h 03m 38s.xml">
+      <configuration name="SendForgotPass" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="CategoryExportRunner - 2018.04.16 at 10h 56m 04s.xml">
-      <configuration name="CategoryExportRunner" configurationId="TestNG" />
+    <history-entry file="SendForgotPass - 2018.04.16 at 14h 05m 10s.xml">
+      <configuration name="SendForgotPass" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="CategoryRunner - 2018.04.16 at 10h 57m 29s.xml">
-      <configuration name="CategoryRunner" configurationId="TestNG" />
+    <history-entry file="SendForgotPass - 2018.04.16 at 14h 08m 30s.xml">
+      <configuration name="SendForgotPass" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="LoginRunner - 2018.04.16 at 10h 57m 46s.xml">
-      <configuration name="LoginRunner" configurationId="TestNG" />
+    <history-entry file="All - 2018.04.16 at 14h 11m 29s.xml">
+      <configuration name="All" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="runner_admin_side - 2018.04.16 at 11h 01m 26s.xml">
-      <configuration name="runner.admin_side" configurationId="TestNG" />
+    <history-entry file="F__Private_Work_Repositories_prestashop_src_test_resources_config_file_public_side_xml - 2018.04.16 at 14h 12m 11s.xml">
+      <configuration name="F:/Private/Work/Repositories/prestashop/src/test/resources/config_file/public_side.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AllRunner - 2018.04.16 at 11h 06m 21s.xml">
-      <configuration name="AllRunner" configurationId="TestNG" />
+    <history-entry file="Global - 2018.04.16 at 14h 17m 04s.xml">
+      <configuration name="Global" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AllRunner - 2018.04.16 at 11h 16m 15s.xml">
-      <configuration name="AllRunner" configurationId="TestNG" />
+    <history-entry file="Global - 2018.04.16 at 14h 19m 23s.xml">
+      <configuration name="Global" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="bottom" id="TODO" order="10" />
@@ -529,7 +512,7 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Version Control" order="2" />
       <window_info anchor="bottom" id="Run" order="6" weight="0.26859045" />
-      <window_info anchor="bottom" id="Terminal" order="0" visible="true" weight="0.32963374" />
+      <window_info anchor="bottom" id="Terminal" order="0" weight="0.32963374" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="0" />
       <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.19616205" />
@@ -539,7 +522,7 @@
       <window_info id="UI Designer" order="1" />
       <window_info anchor="right" id="Theme Preview" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="7" weight="0.26526082" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.26859045" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
@@ -552,7 +535,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="111" />
+      <option name="time" value="131" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
@@ -618,128 +601,11 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding>
-            <element signature="n#dependencies#0;n#project#0;n#!!top" />
-            <element signature="n#dependency#0;n#dependencies#0;n#project#0;n#!!top" />
-            <element signature="n#dependency#1;n#dependencies#0;n#project#0;n#!!top" />
-            <element signature="n#dependency#2;n#dependencies#0;n#project#0;n#!!top" />
-            <element signature="n#dependency#3;n#dependencies#0;n#project#0;n#!!top" />
-            <element signature="n#dependency#4;n#dependencies#0;n#project#0;n#!!top" />
-            <element signature="n#dependency#5;n#dependencies#0;n#project#0;n#!!top" />
-            <element signature="n#dependency#6;n#dependencies#0;n#project#0;n#!!top" />
-            <element signature="n#plugin#0;n#plugins#0;n#build#0;n#project#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/base/HelperBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1717">
-          <caret line="101" selection-start-line="101" selection-end-line="101" />
-          <folding>
-            <element signature="method#HelperBase#0;class#HelperBase#0" />
-            <element signature="method#openUrl#0;class#HelperBase#0" />
-            <element signature="method#input#0;class#HelperBase#0" />
-            <element signature="method#check#0;class#HelperBase#0" />
-            <element signature="method#radio#0;class#HelperBase#0" />
-            <element signature="method#textAreaInFrame#0;class#HelperBase#0" />
-            <element signature="method#upload#0;class#HelperBase#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/application/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1003">
-          <caret line="59" column="41" selection-start-line="59" selection-start-column="41" selection-end-line="59" selection-end-column="41" />
-          <folding>
-            <element signature="class#Browser#0;class#Application#0" />
-            <element signature="method#properties#0;class#Application#0" />
-            <element signature="method#stop#0;class#Application#0" />
-            <element signature="method#createDriver#0;class#Application#0" />
-            <element signature="method#takeScreenshot#0;class#Application#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/helper/admin_side/CategoryHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1734">
-          <caret line="102" selection-start-line="102" selection-end-line="102" />
-          <folding>
-            <element signature="method#clickBulkActionsButton#0;class#CategoryHelper#0" />
-            <element signature="method#clickButtonFromBulkActions#0;class#CategoryHelper#0" />
-            <element signature="method#getLatestFile#0;class#CategoryHelper#0" />
-            <element signature="method#getCategories#0;class#CategoryHelper#0" />
-            <element signature="method#clickAddNewButton#0;class#CategoryHelper#0" />
-            <element signature="method#fillCategoryForm#0;class#CategoryHelper#0" />
-            <element signature="method#clickSaveButtonToCreate#0;class#CategoryHelper#0" />
-            <element signature="method#transform#0;class#CategoryHelper#0" />
-            <element signature="method#deleteCategory#0;class#CategoryHelper#0" />
-            <element signature="method#getDownloadFilesList#0;class#CategoryHelper#0" />
-            <element signature="method#waitForFileDownload#0;class#CategoryHelper#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/step_definition/admin_side/CategoryExport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/helper/admin_side/NavigationHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="42" column="20" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
-          <folding>
-            <element signature="method#getMenuItems#0;class#NavigationHelper#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/MyStepdefs.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.11.0/selenium-api-3.11.0.jar!/org/openqa/selenium/WebDriver.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Class1.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.10/testng-6.10.jar!/org/testng/internal/Invoker.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="443" selection-start-line="443" selection-end-line="443" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Classsss.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-support/3.11.0/selenium-support-3.11.0.jar!/org/openqa/selenium/support/ui/ExpectedConditions.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="503" column="43" selection-start-line="503" selection-start-column="43" selection-end-line="503" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/model/admin_side/CategoryData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="54" column="55" selection-start-line="54" selection-start-column="55" selection-end-line="54" selection-end-column="55" />
-          <folding>
-            <element signature="method#setId#0;class#CategoryData#0" />
-            <element signature="method#setName#0;class#CategoryData#0" />
-            <element signature="method#setDisplayed#0;class#CategoryData#0" />
-            <element signature="method#setDescription#0;class#CategoryData#0" />
-            <element signature="method#setCoverImage#0;class#CategoryData#0" />
-            <element signature="method#toString#0;class#CategoryData#0" />
-            <element signature="method#equals#0;class#CategoryData#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -762,20 +628,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/cucumber/admin_side/category.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" lean-forward="true" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/cucumber/admin_side/login.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" lean-forward="true" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/io/cucumber/cucumber-java8/2.4.0/cucumber-java8-2.4.0.jar!/cucumber/api/java8/En.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -790,23 +642,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/cucumber/admin_side/export_category.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/property/local.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/image/1.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/download/category_2018-04-15_080943.csv">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -814,16 +649,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="122">
           <caret line="37" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/helper/admin_side/NavigationHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="35" column="55" selection-start-line="35" selection-start-column="55" selection-end-line="35" selection-end-column="55" />
-          <folding>
-            <element signature="method#getMenuItems#0;class#NavigationHelper#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -854,89 +679,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/base/CucumberBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/helper/admin_side/CategoryHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="96" selection-start-line="96" selection-end-line="96" />
-          <folding>
-            <element signature="method#clickBulkActionsButton#0;class#CategoryHelper#0" />
-            <element signature="method#clickButtonFromBulkActions#0;class#CategoryHelper#0" />
-            <element signature="method#getLatestFile#0;class#CategoryHelper#0" />
-            <element signature="method#getCategories#0;class#CategoryHelper#0" />
-            <element signature="method#clickAddNewButton#0;class#CategoryHelper#0" />
-            <element signature="method#fillCategoryForm#0;class#CategoryHelper#0" />
-            <element signature="method#clickSaveButtonToCreate#0;class#CategoryHelper#0" />
-            <element signature="method#transform#0;class#CategoryHelper#0" />
-            <element signature="method#deleteCategory#0;class#CategoryHelper#0" />
-            <element signature="method#getDownloadFilesList#0;class#CategoryHelper#0" />
-            <element signature="method#waitForFileDownload#0;class#CategoryHelper#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/step_definition/admin_side/CategoryExport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="25" column="73" selection-start-line="25" selection-start-column="73" selection-end-line="25" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/step_definition/admin_side/Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="15" column="51" lean-forward="true" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
-          <folding>
-            <element signature="e#547#794#0" />
-            <element signature="e#837#903#0" />
-            <element signature="e#956#1058#0" />
-            <element signature="e#1142#1286#0" />
-            <element signature="e#1343#1447#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/step_definition/admin_side/Category.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/base/HelperBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="11" column="33" lean-forward="true" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-          <folding>
-            <element signature="method#HelperBase#0;class#HelperBase#0" />
-            <element signature="method#openUrl#0;class#HelperBase#0" />
-            <element signature="method#input#0;class#HelperBase#0" />
-            <element signature="method#check#0;class#HelperBase#0" />
-            <element signature="method#radio#0;class#HelperBase#0" />
-            <element signature="method#textAreaInFrame#0;class#HelperBase#0" />
-            <element signature="method#upload#0;class#HelperBase#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/helper/admin_side/LoginHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="6" column="66" lean-forward="true" selection-start-line="6" selection-start-column="66" selection-end-line="6" selection-end-column="66" />
-          <folding>
-            <element signature="method#fillLoginForm#0;class#LoginHelper#0" />
-            <element signature="method#isUserLoggedIn#0;class#LoginHelper#0" />
-            <element signature="method#loginAs#0;class#LoginHelper#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Classssssss.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -948,19 +690,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/base/ApplicationBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-          <folding>
-            <element signature="method#login#0;class#ApplicationBase#0" />
-            <element signature="method#navigate#0;class#ApplicationBase#0" />
-            <element signature="method#category#0;class#ApplicationBase#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/runner/admin_side/CategoryExportRunner.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/runner/admin_side/CategoryExport.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="6" column="71" selection-start-line="6" selection-start-column="71" selection-end-line="6" selection-end-column="71" />
@@ -974,52 +704,201 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/runner/admin_side/CategoryRunner.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/model/public_side/UserData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/runner/admin_side/LoginRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/application/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="36" column="54" selection-start-line="36" selection-start-column="54" selection-end-line="36" selection-end-column="54" />
+        <state relative-caret-position="289">
+          <caret line="27" column="18" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
           <folding>
-            <element signature="class#Browser#0;class#Application#0" />
-            <element signature="method#properties#0;class#Application#0" />
-            <element signature="method#stop#0;class#Application#0" />
-            <element signature="method#createDriver#0;class#Application#0" />
-            <element signature="method#takeScreenshot#0;class#Application#0" />
+            <element signature="method#setLogin#0;class#UserData#0" />
+            <element signature="method#setPassword#0;class#UserData#0" />
+            <element signature="method#toString#0;class#UserData#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/runner/admin_side/CategoryExportRunner.java">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/cucumber/public_side/login.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/runner/admin_side/AllRunner.java">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/cucumber/public_side/send_forgot_password.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="8" column="89" selection-start-line="8" selection-start-column="89" selection-end-line="8" selection-end-column="89" />
+          <caret line="7" column="34" lean-forward="true" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/helper/public_side/LoginHelperP.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/helper/public_side/NavigationHelperP.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/helper/public_side/ForgotPasswordHelperP.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+          <folding>
+            <element signature="e#284#285#0" expanded="true" />
+            <element signature="e#307#308#0" expanded="true" />
+            <element signature="e#433#434#0" expanded="true" />
+            <element signature="e#456#457#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/runner/admin_side/Category.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/runner/admin_side/Login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/runner/admin_side/CategoryExport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/runner/public_side/Login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/runner/public_side/SendForgotPass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="6" column="52" lean-forward="true" selection-start-line="6" selection-start-column="52" selection-end-line="6" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/runner/public_side/All.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/runner/Global.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="81" selection-start-line="8" selection-start-column="81" selection-end-line="8" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/property/local.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/image/1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/download/category_2018-04-15_093059.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/config_file/public_side.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="11" lean-forward="true" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/config_file/admin_side.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="55" selection-start-line="4" selection-start-column="55" selection-end-line="4" selection-end-column="55" />
+        <state relative-caret-position="51">
+          <caret line="3" column="17" lean-forward="true" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/config_file/all_run.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="8" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/base/ApplicationBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="63" column="31" selection-start-line="63" selection-start-column="31" selection-end-line="63" selection-end-column="31" />
+          <folding>
+            <element signature="method#loginA#0;class#ApplicationBase#0" />
+            <element signature="method#navigateA#0;class#ApplicationBase#0" />
+            <element signature="method#categoryA#0;class#ApplicationBase#0" />
+            <element signature="method#loginP#0;class#ApplicationBase#0" />
+            <element signature="method#navigateP#0;class#ApplicationBase#0" />
+            <element signature="method#forgotPassP#0;class#ApplicationBase#0" />
+            <element signature="method#wiser#0;class#ApplicationBase#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/base/CucumberBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/base/HelperBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+          <folding>
+            <element signature="method#HelperBase#0;class#HelperBase#0" />
+            <element signature="method#openUrl#0;class#HelperBase#0" />
+            <element signature="method#input#0;class#HelperBase#0" />
+            <element signature="method#check#0;class#HelperBase#0" />
+            <element signature="method#radio#0;class#HelperBase#0" />
+            <element signature="method#textAreaInFrame#0;class#HelperBase#0" />
+            <element signature="method#upload#0;class#HelperBase#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/runner/admin_side/All.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/model/admin_side/CategoryData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="54" column="55" selection-start-line="54" selection-start-column="55" selection-end-line="54" selection-end-column="55" />
+          <folding>
+            <element signature="method#setId#0;class#CategoryData#0" />
+            <element signature="method#setName#0;class#CategoryData#0" />
+            <element signature="method#setDisplayed#0;class#CategoryData#0" />
+            <element signature="method#setDescription#0;class#CategoryData#0" />
+            <element signature="method#setCoverImage#0;class#CategoryData#0" />
+            <element signature="method#toString#0;class#CategoryData#0" />
+            <element signature="method#equals#0;class#CategoryData#0" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1037,6 +916,161 @@
             <element signature="n#dependency#5;n#dependencies#0;n#project#0;n#!!top" />
             <element signature="n#dependency#6;n#dependencies#0;n#project#0;n#!!top" />
             <element signature="n#plugin#0;n#plugins#0;n#build#0;n#project#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/cucumber/admin_side/login.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="26" lean-forward="true" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/cucumber/admin_side/export_category.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="39" lean-forward="true" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/cucumber/admin_side/category.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/helper/service/WiserHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="32" column="35" lean-forward="true" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
+          <folding>
+            <element signature="method#stop#0;class#WiserHelper#0" />
+            <element signature="e#433#434#0" expanded="true" />
+            <element signature="e#522#523#0" expanded="true" />
+            <element signature="e#557#558#0" expanded="true" />
+            <element signature="e#648#649#0" expanded="true" />
+            <element signature="e#695#696#0" expanded="true" />
+            <element signature="e#737#738#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/step_definition/admin_side/Login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+          <folding>
+            <element signature="e#374#484#0" />
+            <element signature="e#554#813#0" />
+            <element signature="e#858#925#0" />
+            <element signature="e#978#1081#0" />
+            <element signature="e#1166#1370#0" />
+            <element signature="e#1427#1532#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/step_definition/admin_side/Category.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="28" column="58" lean-forward="true" selection-start-line="28" selection-start-column="58" selection-end-line="28" selection-end-column="58" />
+          <folding>
+            <element signature="e#597#1068#0" />
+            <element signature="e#1116#1338#0" />
+            <element signature="e#1384#1461#0" />
+            <element signature="e#1514#1884#0" />
+            <element signature="e#1957#2691#0" />
+            <element signature="e#2748#3035#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/step_definition/admin_side/CategoryExport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="37" column="57" selection-start-line="37" selection-start-column="57" selection-end-line="37" selection-end-column="57" />
+          <folding>
+            <element signature="e#618#1103#0" />
+            <element signature="e#1154#1253#0" />
+            <element signature="e#1315#1574#0" />
+            <element signature="e#1628#1866#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/step_definition/public_side/Login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="13" column="54" selection-start-line="13" selection-start-column="54" selection-end-line="13" selection-end-column="54" />
+          <folding>
+            <element signature="e#345#506#0" />
+            <element signature="e#571#832#0" />
+            <element signature="e#873#941#0" />
+            <element signature="e#1005#1082#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/step_definition/public_side/SendForgotPass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="33" column="56" selection-start-line="33" selection-start-column="56" selection-end-line="33" selection-end-column="56" />
+          <folding>
+            <element signature="e#401#617#0" />
+            <element signature="e#660#788#0" />
+            <element signature="e#842#956#0" />
+            <element signature="e#1008#1145#0" />
+            <element signature="e#1196#1318#0" />
+            <element signature="e#1371#1533#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/helper/admin_side/LoginHelperA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="29" column="76" selection-start-line="29" selection-start-column="76" selection-end-line="29" selection-end-column="76" />
+          <folding>
+            <element signature="method#fillLoginForm#0;class#LoginHelperA#0" />
+            <element signature="method#isUserLoggedIn#0;class#LoginHelperA#0" />
+            <element signature="method#loginAs#0;class#LoginHelperA#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/helper/admin_side/NavigationHelperA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="26" column="38" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
+          <folding>
+            <element signature="method#getMenuItems#0;class#NavigationHelperA#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/application/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="class#Browser#0;class#Application#0" />
+            <element signature="method#properties#0;class#Application#0" />
+            <element signature="method#stop#0;class#Application#0" />
+            <element signature="method#createDriver#0;class#Application#0" />
+            <element signature="method#takeScreenshot#0;class#Application#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/helper/admin_side/CategoryHelperA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="27" column="44" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
+          <folding>
+            <element signature="e#3877#3878#0" expanded="true" />
+            <element signature="e#3945#3946#0" expanded="true" />
           </folding>
         </state>
       </provider>

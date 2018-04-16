@@ -7,4 +7,4 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
                  glue = {"base", "step_definition"},
                  strict = true,
                  format = {"json:target/cucumber.json", "html:target/html-cucumber-report"})
-public class AllRunner extends AbstractTestNGCucumberTests {}
+public class All extends AbstractTestNGCucumberTests {}

@@ -20,22 +20,22 @@ public class Category implements En {
 
         //Create category
         Given("^Number of categories before creation$", () -> {
-            base.app.navigate().openUrl(base.app.properties().getProperty("baseUrl"));
-            base.app.login().loginAs(new UserData().setLogin(base.app.properties().getProperty("login"))
-                                                   .setPassword(base.app.properties().getProperty("password")));
-            base.app.navigate().openMenuItem("Catalog", "Categories");
-            before = base.app.category().getCategories();
+            base.app.navigateA().openUrl(base.app.properties().getProperty("adminBaseUrl"));
+            base.app.loginA().loginAs(new UserData().setLogin(base.app.properties().getProperty("adminLogin"))
+                                                    .setPassword(base.app.properties().getProperty("adminPassword")));
+            base.app.navigateA().openMenuItem("Catalog", "Categories");
+            before = base.app.categoryA().getCategories();
         });
         When("^I fill the form with data:$", (DataTable table) -> {
-            category = base.app.category().transform(table.raw().get(1));
-            base.app.category().clickAddNewButton();
-            base.app.category().fillCategoryForm(category);
+            category = base.app.categoryA().transform(table.raw().get(1));
+            base.app.categoryA().clickAddNewButton();
+            base.app.categoryA().fillCategoryForm(category);
         });
         And("^I click the 'Save' button$", () -> {
-            base.app.category().clickSaveButtonToCreate();
+            base.app.categoryA().clickSaveButtonToCreate();
         });
         Then("^Number of groups is incremented$", () -> {
-            Set<CategoryData> after = base.app.category().getCategories();
+            Set<CategoryData> after = base.app.categoryA().getCategories();
             assertEquals(after.size(), before.size() + 1, "Sizes are not equals!");
 
             before.add(category.setId(after.stream().max(Comparator.comparingInt(CategoryData::getId)).get().getId()));
@@ -49,15 +49,15 @@ public class Category implements En {
                                                           .setDisplayed(true)
                                                           .setDescription("Team Desc")
                                                           .setCoverImage(new File("src/test/resources/image/1.jpg"));
-                base.app.category().clickAddNewButton();
-                base.app.category().fillCategoryForm(category);
-                base.app.category().clickSaveButtonToCreate();
+                base.app.categoryA().clickAddNewButton();
+                base.app.categoryA().fillCategoryForm(category);
+                base.app.categoryA().clickSaveButtonToCreate();
             }
             category = before.stream().findAny().get();
-            base.app.category().deleteCategory(category);
+            base.app.categoryA().deleteCategory(category);
         });
         Then("^Number of categories is decremented$", () -> {
-            Set<CategoryData> after = base.app.category().getCategories();
+            Set<CategoryData> after = base.app.categoryA().getCategories();
             assertEquals(after.size() + 1, before.size(), "Sizes are not equals!");
 
             before.remove(category);

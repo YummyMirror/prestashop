@@ -21,23 +21,23 @@ public class CategoryExport implements En {
         Given("^I open the categories page$", () -> {
             if (proxy == null)
                 proxy = base.app.proxy();
-            base.app.navigate().openUrl(base.app.properties().getProperty("baseUrl"));
-            base.app.login().loginAs(new UserData().setLogin(base.app.properties().getProperty("login"))
-                                                   .setPassword(base.app.properties().getProperty("password")));
-            base.app.navigate().openMenuItem("Catalog", "Categories");
+            base.app.navigateA().openUrl(base.app.properties().getProperty("adminBaseUrl"));
+            base.app.loginA().loginAs(new UserData().setLogin(base.app.properties().getProperty("adminLogin"))
+                                                    .setPassword(base.app.properties().getProperty("adminPassword")));
+            base.app.navigateA().openMenuItem("Catalog", "Categories");
         });
         When("^I click the \'Export\' button$", () -> {
             proxy.newHar();
-            base.app.category().clickExportButton();
+            base.app.categoryA().clickExportButton();
         });
         Then("^I verify that \'csv\' file is downloaded$", () -> {
-            List<HarEntry> downloadFilesList = base.app.category().getDownloadFilesList(proxy.getHar().getLog().getEntries());
+            List<HarEntry> downloadFilesList = base.app.categoryA().getDownloadFilesList(proxy.getHar().getLog().getEntries());
             if (base.app.wd() instanceof ChromeDriver)
                 assertEquals(downloadFilesList.size(), 1);
         });
         And("^Name of the file contains \'csv\'$", () -> {
-            if (base.app.category().waitForFileDownload(dir, 5))
-                assertTrue(base.app.category().getLastFileName(dir).contains("category"));
+            if (base.app.categoryA().waitForFileDownload(dir, 5))
+                assertTrue(base.app.categoryA().getLastFileName(dir).contains("category"));
             if (proxy != null)
                 proxy.endHar();
         });

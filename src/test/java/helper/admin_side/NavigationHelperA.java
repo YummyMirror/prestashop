@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import java.util.List;
 import static org.openqa.selenium.support.ui.ExpectedConditions.*;
 
-public class NavigationHelper extends HelperBase {
+public class NavigationHelperA extends HelperBase {
     //Constructor
-    public NavigationHelper(WebDriver wd) {
+    public NavigationHelperA(WebDriver wd) {
         super(wd);
     }
 

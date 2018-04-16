@@ -1,32 +1,69 @@
 package base;
 
-import helper.admin_side.CategoryHelper;
-import helper.admin_side.LoginHelper;
-import helper.admin_side.NavigationHelper;
+import helper.service.WiserHelper;
+import helper.admin_side.CategoryHelperA;
+import helper.admin_side.LoginHelperA;
+import helper.admin_side.NavigationHelperA;
+import helper.public_side.ForgotPasswordHelperP;
+import helper.public_side.LoginHelperP;
+import helper.public_side.NavigationHelperP;
 import org.openqa.selenium.WebDriver;
 
 public abstract class ApplicationBase {
+    //Admin_side
     protected WebDriver wd;
-    private LoginHelper loginHelper;
-    private NavigationHelper navigationHelper;
-    private CategoryHelper categoryHelper;
+    private LoginHelperA loginHelperA;
+    private NavigationHelperA navigationHelperA;
+    private CategoryHelperA categoryHelperA;
+    //Public_side
+    private LoginHelperP loginHelperP;
+    private NavigationHelperP navigationHelperP;
+    private ForgotPasswordHelperP forgotPasswordHelperP;
+    //Service
+    private WiserHelper wiserHelper;
 
-    //Delegate getters
-    public LoginHelper login() {
-        if (loginHelper == null)
-            loginHelper = new LoginHelper(wd);
-        return loginHelper;
+    //Admin_side
+    public LoginHelperA loginA() {
+        if (loginHelperA == null)
+            loginHelperA = new LoginHelperA(wd);
+        return loginHelperA;
     }
 
-    public NavigationHelper navigate() {
-        if (navigationHelper == null)
-            navigationHelper = new NavigationHelper(wd);
-        return navigationHelper;
+    public NavigationHelperA navigateA() {
+        if (navigationHelperA == null)
+            navigationHelperA = new NavigationHelperA(wd);
+        return navigationHelperA;
     }
 
-    public CategoryHelper category() {
-        if (categoryHelper == null)
-            categoryHelper = new CategoryHelper(wd);
-        return categoryHelper;
+    public CategoryHelperA categoryA() {
+        if (categoryHelperA == null)
+            categoryHelperA = new CategoryHelperA(wd);
+        return categoryHelperA;
+    }
+
+    //Public_side
+    public LoginHelperP loginP() {
+        if (loginHelperP == null)
+            loginHelperP = new LoginHelperP(wd);
+        return loginHelperP;
+    }
+
+    public NavigationHelperP navigateP() {
+        if (navigationHelperP == null)
+            navigationHelperP = new NavigationHelperP(wd);
+        return navigationHelperP;
+    }
+
+    public ForgotPasswordHelperP forgotPassP() {
+        if (forgotPasswordHelperP == null)
+            forgotPasswordHelperP = new ForgotPasswordHelperP(wd);
+        return forgotPasswordHelperP;
+    }
+
+    //Service
+    public WiserHelper wiser() {
+        if (wiserHelper == null)
+            wiserHelper = new WiserHelper();
+        return wiserHelper;
     }
 }

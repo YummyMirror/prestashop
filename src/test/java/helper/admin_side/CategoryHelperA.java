@@ -11,9 +11,9 @@ import java.util.*;
 import java.util.stream.Collectors;
 import static org.openqa.selenium.support.ui.ExpectedConditions.*;
 
-public class CategoryHelper extends HelperBase {
+public class CategoryHelperA extends HelperBase {
     //Constructor
-    public CategoryHelper(WebDriver wd) {
+    public CategoryHelperA(WebDriver wd) {
         super(wd);
     }
 
@@ -25,7 +25,7 @@ public class CategoryHelper extends HelperBase {
     private void clickBulkActionsButton() {
         click(By.xpath("//button[contains(@id, 'bulk_action')]"));
         wait.until(attributeContains(By.xpath("//button[contains(@id, 'bulk_action')]/.."),
-                            "class", "open"));
+                                            "class", "open"));
     }
 
     private void clickButtonFromBulkActions(String buttonName) {

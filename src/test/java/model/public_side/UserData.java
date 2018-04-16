@@ -1,4 +1,4 @@
-package model.admin_side;
+package model.public_side;
 
 public class UserData {
     private String login;

@@ -11,27 +11,28 @@ public class Login implements En {
     public Login(CucumberBase base) {
         this.base = base;
 
-        //Valid login
+        //Valid loginA
         Given("^I open the administration login page$", () -> {
-            base.app.navigate().openUrl(base.app.properties().getProperty("baseUrl"));
+            base.app.navigateA().openUrl(base.app.properties().getProperty("adminBaseUrl"));
         });
         When("^I enter both valid \'username\' and \'password\'$", () -> {
-            base.app.login().fillLoginForm(new UserData().setLogin(base.app.properties().getProperty("login"))
-                                                         .setPassword(base.app.properties().getProperty("password")));
+            base.app.loginA().fillLoginForm(new UserData().setLogin(base.app.properties().getProperty("adminLogin"))
+                                                          .setPassword(base.app.properties().getProperty("adminPassword")));
         });
-        And("^I click the login page$", () -> {
-            base.app.login().clickLoginButton();
+        And("^I click the login button$", () -> {
+            base.app.loginA().clickLoginButton();
         });
         Then("^I verify that user is logged in$", () -> {
-            assertTrue(base.app.login().isUserLoggedIn(), "User is not logged in!");
+            assertTrue(base.app.loginA().isUserLoggedIn(), "User is not logged in!");
         });
 
-        //Invalid login
+        //Invalid loginA
         When("^I enter invalid \'(.*)\' and \'(.*)\'$", (String login, String password) -> {
-            base.app.login().fillLoginForm(new UserData().setLogin(login).setPassword(password));
+            base.app.loginA().fillLoginForm(new UserData().setLogin(login)
+                                                          .setPassword(password));
         });
         Then("^I verify that user is not logged in$", () -> {
-            assertTrue(base.app.login().isLoginButtonPresent(), "User is logged in!");
+            assertTrue(base.app.loginA().isLoginButtonPresent(), "User is logged in!");
         });
     }
 }

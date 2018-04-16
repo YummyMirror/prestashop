@@ -1,8 +1,8 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Admin_side">
-    <test name="Test 1">
+<suite name="All_tests">
+    <test name="Sets 3">
         <classes>
-            <class name="runner.admin_side.All"/>
+            <class name="runner.Global"/>
         </classes>
     </test>
 </suite>
