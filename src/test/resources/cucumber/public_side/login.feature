@@ -1,3 +1,4 @@
+@Public
 Feature: Checking login form
 
   Background:

@@ -1,3 +1,5 @@
+@Admin
+@Category
 Feature: Category manipulations
 
   Background:

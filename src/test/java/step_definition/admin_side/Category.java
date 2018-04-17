@@ -4,7 +4,6 @@ import base.CucumberBase;
 import cucumber.api.DataTable;
 import cucumber.api.java8.En;
 import model.admin_side.CategoryData;
-import model.admin_side.UserData;
 import java.io.File;
 import java.util.Comparator;
 import java.util.Set;
@@ -20,10 +19,6 @@ public class Category implements En {
 
         //Create category
         Given("^Number of categories before creation$", () -> {
-            base.app.navigateA().openUrl(base.app.properties().getProperty("adminBaseUrl"));
-            base.app.loginA().loginAs(new UserData().setLogin(base.app.properties().getProperty("adminLogin"))
-                                                    .setPassword(base.app.properties().getProperty("adminPassword")));
-            base.app.navigateA().openMenuItem("Catalog", "Categories");
             before = base.app.categoryA().getCategories();
         });
         When("^I fill the form with data:$", (DataTable table) -> {

@@ -12,9 +12,7 @@ public class Login implements En {
         this.base = base;
 
         //Valid loginA
-        Given("^I open the administration login page$", () -> {
-            base.app.navigateA().openUrl(base.app.properties().getProperty("adminBaseUrl"));
-        });
+        Given("^I open the administration login page$", () -> {});
         When("^I enter both valid \'username\' and \'password\'$", () -> {
             base.app.loginA().fillLoginForm(new UserData().setLogin(base.app.properties().getProperty("adminLogin"))
                                                           .setPassword(base.app.properties().getProperty("adminPassword")));

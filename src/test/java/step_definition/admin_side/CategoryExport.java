@@ -2,7 +2,6 @@ package step_definition.admin_side;
 
 import base.CucumberBase;
 import cucumber.api.java8.En;
-import model.admin_side.UserData;
 import net.lightbody.bmp.BrowserMobProxy;
 import net.lightbody.bmp.core.har.HarEntry;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -18,15 +17,10 @@ public class CategoryExport implements En {
         this.base = base;
         File dir = base.app.getDownloadDir();
 
-        Given("^I open the categories page$", () -> {
+        Given("^I open the categories page$", () -> {});
+        When("^I click the \'Export\' button$", () -> {
             if (proxy == null)
                 proxy = base.app.proxy();
-            base.app.navigateA().openUrl(base.app.properties().getProperty("adminBaseUrl"));
-            base.app.loginA().loginAs(new UserData().setLogin(base.app.properties().getProperty("adminLogin"))
-                                                    .setPassword(base.app.properties().getProperty("adminPassword")));
-            base.app.navigateA().openMenuItem("Catalog", "Categories");
-        });
-        When("^I click the \'Export\' button$", () -> {
             proxy.newHar();
             base.app.categoryA().clickExportButton();
         });

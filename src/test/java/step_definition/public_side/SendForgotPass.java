@@ -13,15 +13,12 @@ public class SendForgotPass implements En {
         this.base = base;
 
         Given("^I open the \'Forgot password\' page$", () -> {
-            base.app.navigateP().openUrl(base.app.properties().getProperty("publicBaseUrl"));
-            base.app.navigateP().openLoginPage();
             base.app.navigateP().openForgotPassPage();
         });
         When("^I enter the \'email\'$", () -> {
             base.app.forgotPassP().enterEmailToSendPassword(base.app.properties().getProperty("publicLogin"));
         });
         And("^I click the \'Send email\' button$", () -> {
-            base.app.wiser().start();
             base.app.forgotPassP().clickSendEmailButton();
         });
         Then("^I check that one email is sent$", () -> {
@@ -33,7 +30,6 @@ public class SendForgotPass implements En {
         });
         And("^I check that receiver is correct$", () -> {
             assertEquals(base.app.wiser().getReceiver(), base.app.properties().getProperty("publicLogin"));
-            base.app.wiser().stop();
         });
     }
 }

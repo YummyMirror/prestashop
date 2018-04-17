@@ -1,5 +1,7 @@
 Feature: Forgot password sending
 
+  @Public
+  @Wiser
   Scenario: Checking that forgot password email sends
     Given I open the 'Forgot password' page
     When I enter the 'email'

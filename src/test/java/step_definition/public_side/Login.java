@@ -11,10 +11,7 @@ public class Login implements En {
     public Login(CucumberBase base) {
         this.base = base;
 
-        Given("^I open the public login page$", () -> {
-            base.app.navigateP().openUrl(base.app.properties().getProperty("publicBaseUrl"));
-            base.app.navigateP().openLoginPage();
-        });
+        Given("^I open the public login page$", () -> {});
         When("^I enter valid \'username\' and \'password\'$", () -> {
             base.app.loginP().fillLoginForm(new UserData().setLogin(base.app.properties().getProperty("publicLogin"))
                                                           .setPassword(base.app.properties().getProperty("publicPassword")));

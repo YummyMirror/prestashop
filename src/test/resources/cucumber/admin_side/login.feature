@@ -1,3 +1,4 @@
+@Admin
 Feature: Checking login form
 
   Background:
