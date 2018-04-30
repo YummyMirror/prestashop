@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="886ae2ee-5b3f-4b48-8c50-94db27b2031e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/base/CucumberBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/CucumberBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runner/admin_side/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/admin_side/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runner/admin_side/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/admin_side/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/step_definition/admin_side/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/step_definition/admin_side/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/step_definition/admin_side/CategoryExport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/step_definition/admin_side/CategoryExport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/step_definition/admin_side/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/step_definition/admin_side/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/step_definition/public_side/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/step_definition/public_side/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/step_definition/public_side/SendForgotPass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/step_definition/public_side/SendForgotPass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/cucumber/admin_side/category.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/cucumber/admin_side/category.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/cucumber/admin_side/export_category.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/cucumber/admin_side/export_category.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/cucumber/admin_side/login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/cucumber/admin_side/login.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/cucumber/public_side/login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/cucumber/public_side/login.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/cucumber/public_side/send_forgot_password.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/cucumber/public_side/send_forgot_password.feature" afterDir="false" />
-    </list>
+    <list default="true" id="886ae2ee-5b3f-4b48-8c50-94db27b2031e" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -47,17 +32,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Application.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/application/Application.java">
+      <file leaf-file-name="WiserHelper.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/helper/service/WiserHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="52" column="16" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
+            <state relative-caret-position="204">
+              <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
               <folding>
-                <element signature="class#Browser#0;class#Application#0" />
-                <element signature="method#properties#0;class#Application#0" />
-                <element signature="method#stop#0;class#Application#0" />
-                <element signature="method#createDriver#0;class#Application#0" />
-                <element signature="method#takeScreenshot#0;class#Application#0" />
+                <element signature="method#stop#0;class#WiserHelper#0" />
               </folding>
             </state>
           </provider>
@@ -85,7 +66,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/CategoryExportRunner.java" />
         <option value="$PROJECT_DIR$/src/test/java/Classssssss.java" />
         <option value="$PROJECT_DIR$/src/test/java/base/HelperBase.java" />
         <option value="$PROJECT_DIR$/src/test/java/runner/CategoryExportRunner.java" />
@@ -106,8 +86,6 @@
         <option value="$PROJECT_DIR$/src/test/java/helper/public_side/NavigationHelperP.java" />
         <option value="$PROJECT_DIR$/src/test/java/helper/public_side/ForgotPasswordHelperP.java" />
         <option value="$PROJECT_DIR$/src/test/java/application/Application.java" />
-        <option value="$PROJECT_DIR$/src/test/java/base/ApplicationBase.java" />
-        <option value="$PROJECT_DIR$/src/test/java/helper/service/WiserHelper.java" />
         <option value="$PROJECT_DIR$/src/test/java/runner/public_side/SendForgotPassRunner.java" />
         <option value="$PROJECT_DIR$/src/test/java/runner/public_side/SendForgotPass.java" />
         <option value="$PROJECT_DIR$/src/test/java/runner/public_side/LoginRunner.java" />
@@ -125,16 +103,19 @@
         <option value="$PROJECT_DIR$/src/test/java/helper/admin_side/CategoryHelperA.java" />
         <option value="$PROJECT_DIR$/src/test/java/runner/admin_side/Category.java" />
         <option value="$PROJECT_DIR$/src/test/java/step_definition/public_side/Login.java" />
-        <option value="$PROJECT_DIR$/src/test/java/step_definition/public_side/SendForgotPass.java" />
         <option value="$PROJECT_DIR$/src/test/java/step_definition/admin_side/Login.java" />
         <option value="$PROJECT_DIR$/src/test/java/runner/admin_side/Login.java" />
         <option value="$PROJECT_DIR$/src/test/resources/cucumber/admin_side/login.feature" />
         <option value="$PROJECT_DIR$/src/test/resources/cucumber/admin_side/category.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/step_definition/admin_side/Category.java" />
         <option value="$PROJECT_DIR$/src/test/java/base/CucumberBase.java" />
         <option value="$PROJECT_DIR$/src/test/resources/cucumber/admin_side/export_category.feature" />
         <option value="$PROJECT_DIR$/src/test/resources/cucumber/public_side/login.feature" />
         <option value="$PROJECT_DIR$/src/test/java/step_definition/admin_side/CategoryExport.java" />
+        <option value="$PROJECT_DIR$/src/test/java/step_definition/admin_side/Category.java" />
+        <option value="$PROJECT_DIR$/src/test/java/base/ApplicationBase.java" />
+        <option value="$PROJECT_DIR$/src/test/java/model/public_side/MailMessage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/helper/service/WiserHelper.java" />
+        <option value="$PROJECT_DIR$/src/test/java/step_definition/public_side/SendForgotPass.java" />
         <option value="$PROJECT_DIR$/src/test/resources/cucumber/public_side/send_forgot_password.feature" />
       </list>
     </option>
@@ -152,6 +133,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -183,7 +167,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="runner" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="prestashop_project" type="b2602c69:ProjectViewProjectNode" />
@@ -191,25 +175,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="runner" type="462c0819:PsiDirectoryNode" />
-              <item name="admin_side" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="prestashop_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="prestashop" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="step_definition" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="prestashop_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="prestashop" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="step_definition" type="462c0819:PsiDirectoryNode" />
-              <item name="admin_side" type="462c0819:PsiDirectoryNode" />
+              <item name="helper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="prestashop_project" type="b2602c69:ProjectViewProjectNode" />
@@ -239,9 +205,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -270,7 +233,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.F:/Private/Work/Repositories/prestashop/src/test/resources/config_file/all_run.xml">
+  <component name="RunManager" selected="TestNG.SendForgotPass">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -371,19 +334,19 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="Login (1)" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Login" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="prestashop" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="runner.admin_side.*" />
+          <option name="PATTERN" value="runner.public_side.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="runner.admin_side" />
-      <option name="MAIN_CLASS_NAME" value="runner.admin_side.Login" />
+      <option name="PACKAGE_NAME" value="runner.public_side" />
+      <option name="MAIN_CLASS_NAME" value="runner.public_side.Login" />
       <option name="METHOD_NAME" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="CLASS" />
@@ -400,7 +363,7 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="Login" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SendForgotPass" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="prestashop" />
       <extension name="coverage">
         <pattern>
@@ -412,7 +375,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="runner.public_side" />
-      <option name="MAIN_CLASS_NAME" value="runner.public_side.Login" />
+      <option name="MAIN_CLASS_NAME" value="runner.public_side.SendForgotPass" />
       <option name="METHOD_NAME" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="CLASS" />
@@ -455,16 +418,16 @@
       <item itemvalue="TestNG.Login" />
       <item itemvalue="TestNG.Category" />
       <item itemvalue="TestNG.CategoryExport" />
-      <item itemvalue="TestNG.Login (1)" />
       <item itemvalue="TestNG.F:/Private/Work/Repositories/prestashop/src/test/resources/config_file/all_run.xml" />
+      <item itemvalue="TestNG.SendForgotPass" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.SendForgotPass" />
         <item itemvalue="TestNG.F:/Private/Work/Repositories/prestashop/src/test/resources/config_file/all_run.xml" />
         <item itemvalue="TestNG.Login" />
         <item itemvalue="TestNG.CategoryExport" />
         <item itemvalue="TestNG.Category" />
-        <item itemvalue="TestNG.Login (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -482,15 +445,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Login - 2018.04.17 at 14h 32m 25s.xml">
-      <configuration name="Login" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="SendForgotPass - 2018.04.17 at 14h 32m 44s.xml">
-      <configuration name="SendForgotPass" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Login_(1) - 2018.04.17 at 14h 35m 27s.xml">
-      <configuration name="Login (1)" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="Login_(1) - 2018.04.17 at 14h 36m 26s.xml">
       <configuration name="Login (1)" configurationId="TestNG" />
     </history-entry>
@@ -512,6 +466,15 @@
     <history-entry file="F__Private_Work_Repositories_prestashop_src_test_resources_config_file_all_run_xml - 2018.04.17 at 15h 07m 24s.xml">
       <configuration name="F:/Private/Work/Repositories/prestashop/src/test/resources/config_file/all_run.xml" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="SendForgotPass - 2018.04.30 at 11h 42m 04s.xml">
+      <configuration name="SendForgotPass" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="SendForgotPass - 2018.04.30 at 11h 46m 45s.xml">
+      <configuration name="SendForgotPass" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="SendForgotPass - 2018.04.30 at 11h 46m 58s.xml">
+      <configuration name="SendForgotPass" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -525,18 +488,18 @@
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" weight="0.32963374" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Run" order="6" weight="0.26748058" />
       <window_info anchor="bottom" id="Version Control" order="2" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.26748058" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.32963374" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="0" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.20042644" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.20469083" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
       <window_info id="UI Designer" order="1" />
       <window_info anchor="right" id="Theme Preview" order="2" />
-      <window_info anchor="bottom" id="Debug" order="7" weight="0.26748058" />
       <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.26748058" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
@@ -550,7 +513,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="154" />
+      <option name="time" value="159" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
@@ -568,6 +531,11 @@
       </expression>
     </expressions>
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>multipart.getCount()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>app.getLoginHelper()</expression-string>
         <language-id>JAVA</language-id>
@@ -608,15 +576,9 @@
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>message.toString()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/Classsss.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-support/3.11.0/selenium-support-3.11.0.jar!/org/openqa/selenium/support/ui/ExpectedConditions.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -689,13 +651,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/property/local.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/config_file/public_side.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -756,24 +711,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="85" column="24" selection-start-line="85" selection-start-column="24" selection-end-line="85" selection-end-column="24" />
-          <folding>
-            <element signature="n#dependencies#0;n#project#0;n#!!top" />
-            <element signature="n#dependency#0;n#dependencies#0;n#project#0;n#!!top" />
-            <element signature="n#dependency#1;n#dependencies#0;n#project#0;n#!!top" />
-            <element signature="n#dependency#2;n#dependencies#0;n#project#0;n#!!top" />
-            <element signature="n#dependency#3;n#dependencies#0;n#project#0;n#!!top" />
-            <element signature="n#dependency#4;n#dependencies#0;n#project#0;n#!!top" />
-            <element signature="n#dependency#5;n#dependencies#0;n#project#0;n#!!top" />
-            <element signature="n#dependency#6;n#dependencies#0;n#project#0;n#!!top" />
-            <element signature="n#plugin#0;n#plugins#0;n#build#0;n#project#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/helper/admin_side/LoginHelperA.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -783,13 +720,6 @@
             <element signature="method#isUserLoggedIn#0;class#LoginHelperA#0" />
             <element signature="method#loginAs#0;class#LoginHelperA#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/helper/admin_side/NavigationHelperA.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="26" column="38" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -804,13 +734,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/helper/public_side/ForgotPasswordHelperP.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="13" column="57" selection-start-line="13" selection-start-column="57" selection-end-line="13" selection-end-column="57" />
         </state>
       </provider>
     </entry>
@@ -832,22 +755,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/base/ApplicationBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="63" column="14" selection-start-line="63" selection-start-column="14" selection-end-line="63" selection-end-column="14" />
-          <folding>
-            <element signature="method#loginA#0;class#ApplicationBase#0" />
-            <element signature="method#navigateA#0;class#ApplicationBase#0" />
-            <element signature="method#categoryA#0;class#ApplicationBase#0" />
-            <element signature="method#loginP#0;class#ApplicationBase#0" />
-            <element signature="method#navigateP#0;class#ApplicationBase#0" />
-            <element signature="method#forgotPassP#0;class#ApplicationBase#0" />
-            <element signature="method#wiser#0;class#ApplicationBase#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/io/cucumber/cucumber-core/2.4.0/cucumber-core-2.4.0.jar!/cucumber/api/TestStep.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="129">
@@ -866,22 +773,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="24" column="89" selection-start-line="24" selection-start-column="89" selection-end-line="24" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/helper/service/WiserHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
-          <folding>
-            <element signature="method#stop#0;class#WiserHelper#0" />
-            <element signature="e#433#434#0" expanded="true" />
-            <element signature="e#522#523#0" expanded="true" />
-            <element signature="e#557#558#0" expanded="true" />
-            <element signature="e#648#649#0" expanded="true" />
-            <element signature="e#695#696#0" expanded="true" />
-            <element signature="e#737#738#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -913,13 +804,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/cucumber/public_side/login.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="50" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/runner/public_side/Login.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -931,13 +815,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="8" column="30" lean-forward="true" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/step_definition/public_side/SendForgotPass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="31" column="107" selection-start-line="31" selection-start-column="107" selection-end-line="31" selection-end-column="107" />
         </state>
       </provider>
     </entry>
@@ -962,28 +839,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/cucumber/admin_side/category.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/step_definition/admin_side/Category.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="53" column="60" selection-start-line="53" selection-start-column="60" selection-end-line="53" selection-end-column="60" />
-          <folding>
-            <element signature="e#563#639#0" />
-            <element signature="e#687#909#0" />
-            <element signature="e#955#1032#0" />
-            <element signature="e#1085#1455#0" />
-            <element signature="e#1528#2262#0" />
-            <element signature="e#2319#2606#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/cucumber/admin_side/export_category.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -998,36 +853,141 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/cucumber/public_side/send_forgot_password.feature">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/cucumber/admin_side/category.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="40" lean-forward="true" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/base/CucumberBase.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/step_definition/admin_side/Category.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="5" column="33" lean-forward="true" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+        <state relative-caret-position="357">
+          <caret line="28" column="50" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/helper/public_side/ForgotPasswordHelperP.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="13" column="57" selection-start-line="13" selection-start-column="57" selection-end-line="13" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/base/ApplicationBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="23" column="16" lean-forward="true" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
           <folding>
-            <element signature="e#545#596#0" />
-            <element signature="e#676#739#0" />
-            <element signature="e#925#1035#0" />
-            <element signature="e#1126#1413#0" />
+            <element signature="method#loginA#0;class#ApplicationBase#0" />
+            <element signature="method#navigateA#0;class#ApplicationBase#0" />
+            <element signature="method#categoryA#0;class#ApplicationBase#0" />
+            <element signature="method#loginP#0;class#ApplicationBase#0" />
+            <element signature="method#navigateP#0;class#ApplicationBase#0" />
+            <element signature="method#forgotPassP#0;class#ApplicationBase#0" />
+            <element signature="method#wiser#0;class#ApplicationBase#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/model/public_side/MailMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="59" column="18" selection-start-line="59" selection-start-column="18" selection-end-line="59" selection-end-column="18" />
+          <folding>
+            <element signature="method#setTitle#0;class#MailMessage#0" />
+            <element signature="method#setFrom#0;class#MailMessage#0" />
+            <element signature="method#setTo#0;class#MailMessage#0" />
+            <element signature="method#setReceivedDate#0;class#MailMessage#0" />
+            <element signature="method#setContent#0;class#MailMessage#0" />
+            <element signature="method#toString#0;class#MailMessage#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/property/local.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/step_definition/public_side/SendForgotPass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/application/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="52" column="16" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
+        <state relative-caret-position="527">
+          <caret line="95" column="16" selection-start-line="95" selection-start-column="16" selection-end-line="95" selection-end-column="16" />
           <folding>
             <element signature="class#Browser#0;class#Application#0" />
             <element signature="method#properties#0;class#Application#0" />
             <element signature="method#stop#0;class#Application#0" />
             <element signature="method#createDriver#0;class#Application#0" />
-            <element signature="method#takeScreenshot#0;class#Application#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="85" column="24" selection-start-line="85" selection-start-column="24" selection-end-line="85" selection-end-column="24" />
+          <folding>
+            <element signature="n#dependencies#0;n#project#0;n#!!top" />
+            <element signature="n#dependency#0;n#dependencies#0;n#project#0;n#!!top" />
+            <element signature="n#dependency#1;n#dependencies#0;n#project#0;n#!!top" />
+            <element signature="n#dependency#2;n#dependencies#0;n#project#0;n#!!top" />
+            <element signature="n#dependency#3;n#dependencies#0;n#project#0;n#!!top" />
+            <element signature="n#dependency#4;n#dependencies#0;n#project#0;n#!!top" />
+            <element signature="n#dependency#5;n#dependencies#0;n#project#0;n#!!top" />
+            <element signature="n#dependency#6;n#dependencies#0;n#project#0;n#!!top" />
+            <element signature="n#plugin#0;n#plugins#0;n#build#0;n#project#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/cucumber/public_side/send_forgot_password.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/cucumber/public_side/login.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="50" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/helper/admin_side/NavigationHelperA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="22" column="54" lean-forward="true" selection-start-line="22" selection-start-column="54" selection-end-line="22" selection-end-column="54" />
+          <folding>
+            <element signature="e#766#767#0" expanded="true" />
+            <element signature="e#827#828#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/base/CucumberBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="27" column="57" lean-forward="true" selection-start-line="27" selection-start-column="57" selection-end-line="27" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/helper/service/WiserHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+          <folding>
+            <element signature="method#stop#0;class#WiserHelper#0" />
           </folding>
         </state>
       </provider>

@@ -2,12 +2,14 @@ package step_definition.public_side;
 
 import base.CucumberBase;
 import cucumber.api.java8.En;
-import org.subethamail.wiser.WiserMessage;
+import model.public_side.MailMessage;
 import java.util.List;
 import static org.testng.Assert.*;
 
 public class SendForgotPass implements En {
     private CucumberBase base;
+    private List<MailMessage> messages;
+    private MailMessage message;
 
     public SendForgotPass(CucumberBase base) {
         this.base = base;
@@ -22,14 +24,15 @@ public class SendForgotPass implements En {
             base.app.forgotPassP().clickSendEmailButton();
         });
         Then("^I check that one email is sent$", () -> {
-            List<WiserMessage> messages = base.app.wiser().getMessages();
+            messages = base.app.wiser().getMessages();
             assertEquals(messages.size(), 1);
         });
         And("^I check that sender is correct$", () -> {
-            assertEquals(base.app.wiser().getSender(), base.app.properties().getProperty("adminLogin"));
+            message = messages.stream().findFirst().get();
+            assertEquals(message.getFrom(), base.app.properties().getProperty("adminLogin"));
         });
         And("^I check that receiver is correct$", () -> {
-            assertEquals(base.app.wiser().getReceiver(), base.app.properties().getProperty("publicLogin"));
+            assertEquals(message.getTo(), base.app.properties().getProperty("publicLogin"));
         });
     }
 }

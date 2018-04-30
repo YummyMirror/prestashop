@@ -8,6 +8,7 @@ import helper.public_side.ForgotPasswordHelperP;
 import helper.public_side.LoginHelperP;
 import helper.public_side.NavigationHelperP;
 import org.openqa.selenium.WebDriver;
+import java.util.Objects;
 
 public abstract class ApplicationBase {
     //Admin_side
@@ -24,45 +25,45 @@ public abstract class ApplicationBase {
 
     //Admin_side
     public LoginHelperA loginA() {
-        if (loginHelperA == null)
+        if (Objects.isNull(loginHelperA))
             loginHelperA = new LoginHelperA(wd);
         return loginHelperA;
     }
 
     public NavigationHelperA navigateA() {
-        if (navigationHelperA == null)
+        if (Objects.isNull(navigationHelperA))
             navigationHelperA = new NavigationHelperA(wd);
         return navigationHelperA;
     }
 
     public CategoryHelperA categoryA() {
-        if (categoryHelperA == null)
+        if (Objects.isNull(categoryHelperA))
             categoryHelperA = new CategoryHelperA(wd);
         return categoryHelperA;
     }
 
     //Public_side
     public LoginHelperP loginP() {
-        if (loginHelperP == null)
+        if (Objects.isNull(loginHelperP))
             loginHelperP = new LoginHelperP(wd);
         return loginHelperP;
     }
 
     public NavigationHelperP navigateP() {
-        if (navigationHelperP == null)
+        if (Objects.isNull(navigationHelperP))
             navigationHelperP = new NavigationHelperP(wd);
         return navigationHelperP;
     }
 
     public ForgotPasswordHelperP forgotPassP() {
-        if (forgotPasswordHelperP == null)
+        if (Objects.isNull(forgotPasswordHelperP))
             forgotPasswordHelperP = new ForgotPasswordHelperP(wd);
         return forgotPasswordHelperP;
     }
 
     //Service
     public WiserHelper wiser() {
-        if (wiserHelper == null)
+        if (Objects.isNull(wiserHelper))
             wiserHelper = new WiserHelper();
         return wiserHelper;
     }
